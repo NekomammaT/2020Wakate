@@ -1,0 +1,661 @@
+\documentclass[11pt,a4paper,uplatex,dvipdfmx]{ujarticle} 		% for uplatex
+%\documentclass[11pt,a4j,dvipdfmx]{jarticle} 					% for platex
+\input{pieces/form00_header} % pieces
+\input{pieces/kakenhi7} % pieces
+\input{pieces/form01_header} % pieces
+\input{pieces/form02_2021_header} % pieces
+\input{pieces/hook3} % pieces
+%#Name: wakate
+\input{pieces/form04_jsps_headers} % pieces
+\input{pieces/form04_wakate_header} % pieces
+% ===== Global definitions for the Kakenhi form ======================
+%　基本情報
+%
+%------ 研究課題名  -------------------------------------------
+\newcommand{\研究課題名}{確率解析・原始ブラックホール・重力波観測から迫るインフレーション}
+
+%----- 研究機関名と研究代表者の氏名-----------------------
+\newcommand{\研究機関名}{名古屋大学}
+\newcommand{\研究代表者氏名}{多田祐一郎}
+\newcommand{\me}{\underline{\underline{Y.~Tada}}} 
+%---- 研究期間の最終年度 ----------------
+\newcommand{\研究期間の最終元号年度}{6}  %令和で、半角数字のみ
+%========================================
+
+\input{pieces/inst_general} % pieces
+\input{pieces/inst_only_general} % pieces
+% user07_header
+% ===== my favorite packages ====================================
+% ここに、自分の使いたいパッケージを宣言して下さい。
+\usepackage{wrapfig}
+%\usepackage{amssymb}
+%\usepackage{mb}
+%\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
+\usepackage{lineno}
+
+\usepackage[dvipdfmx]{graphicx,xcolor}
+\usepackage[multi,deluxe,bold,expert]{otf}
+\usepackage[framemethod=tikz]{mdframed}
+\usepackage[dvipdfmx
+, colorlinks = true
+, urlcolor = darkblue
+, citecolor = darkblue
+, linkcolor = darkblue]{hyperref}
+\usepackage{cite}
+\usepackage{url}
+
+
+
+% ===== my personal definitions ==================================
+% ここに、自分のよく使う記号などを定義して下さい。
+\newcommand{\klpionn}{K_L \to \pi^0 \nu \overline{\nu}}
+\newcommand{\kppipnn}{K^+ \to \pi^+ \nu \overline{\nu}}
+
+% ----- 業績リスト用 -------------
+\newcommand{\paper}[6]{%
+	% paper{title}{authors}{journal}{vol}{pages}{year}
+	\item ``#1'', #2, #3 {\bf #4}, #5 (#6).			% お好みに合わせて変えてください。
+}
+
+\newcommand{\etal}{\textit{et al.\ }}
+\newcommand{\ca}[1]{*#1}	% corresponding author;   \ca{\yukawa}  みたいにして使う
+\newcommand{\invitedtalk}{招待講演}
+
+\newcommand{\yukawa}{H.~Yukawa}					% no underline
+%\newcommand{\yukawa}{\underline{\underline{H.~Yukawa}}}	% with 2 underlines
+\newcommand{\tomonaga}{S.~Tomonaga}
+
+\newcommand{\prl}{Phys.\ Rev.\ Lett.\ }		% よく使う雑誌も定義すると楽
+
+\definecolor{monza}{HTML}{CF000F}
+\definecolor{darkblue}{HTML}{00008b}
+\definecolor{darkmagenta}{HTML}{8b008b}
+
+%\definecolor{stochastic}{HTML}{FF7E79}
+%\definecolor{stochastic}{HTML}{FCB9B9}
+\definecolor{stochastic}{HTML}{FCD0D0}
+%\definecolor{PBH}{HTML}{76D6FF}
+\definecolor{PBH}{HTML}{D4F4FF}
+%\definecolor{GW}{HTML}{73FA79}
+\definecolor{GW}{HTML}{D4FFD4}
+
+\renewcommand{\emph}[1]{{\sffamily\gtfamily\bfseries #1}}
+\newcommand{\subject}[1]{\noindent{\sffamily\gtfamily\bfseries #1}~~}
+\newcommand{\subsubject}[1]{\noindent \underline{#1}~~}
+\newcommand{\stochastic}[1]{\noindent \colorbox{stochastic}{\ul{i) #1}}~~}
+\newcommand{\PBH}[1]{\noindent\colorbox{PBH}{\ul{ii) #1}}~~}
+\newcommand{\GW}[1]{\noindent\colorbox{GW}{\ul{iii) #1}}~~}
+%\renewcommand{\bf}{\bfseries\sffamily\gtfamily}
+
+\newcommand{\Red}[1]{\textcolor{monza}{\sffamily\gtfamily\bfseries #1}}
+\newcommand{\Blue}[1]{\textcolor{darkblue}{\sffamily\gtfamily\bfseries #1}}
+
+\newenvironment{footnoteSBL}{
+	\baselineskip=10pt
+}
+
+\makeatletter
+\renewenvironment{thebibliography}[1]
+{\section*{\refname\@mkboth{\refname}{\refname}}%
+\list{\@biblabel{\@arabic\c@enumiv}}%
+{\settowidth\labelwidth{\@biblabel{#1}}%
+\leftmargin\labelwidth
+\advance\leftmargin\labelsep
+\setlength\itemsep{0.2zh}%←ここの数値を調整(行間のつまり具合)
+\setlength\baselineskip{11pt}%←ここの数値を調整（追加）(文字の大きさ)
+\@openbib@code
+\usecounter{enumiv}%
+\let\p@enumiv\@empty
+\renewcommand\theenumiv{\@arabic\c@enumiv}}%
+\sloppy
+\clubpenalty4000
+\@clubpenalty\clubpenalty
+\widowpenalty4000%
+\sfcode`\.\@m}
+{\def\@noitemerr
+{\@latex@warning{Empty `thebibliography' environment}}%
+\endlist}
+\makeatother
+
+
+
+% ===== 欄外メモ ==================
+\newcommand{\memo}[1]{\marginpar{#1}}
+%\renewcommand{\memo}[1]{}	% 全てのメモを表示させないようにするには、行頭の"%"を消す
+
+
+%\input{../../sample/simple/contents}	% skip
+\input{pieces/hook5} % pieces
+
+\begin{document}
+
+\mgfamily\sffamily
+
+\input{pieces/hook7} % pieces
+%#Split: 01_purpose_plan  
+%#PieceName: p01_purpose_plan
+\input{pieces/p01_purpose_plan_00}
+\section{１　研究目的、研究方法など}
+%　　　　＜＜最大　3ページ＞＞
+
+%s02_purpose_plan_with_abstract_3p
+\noindent
+\textbf{（概要）}\\
+%begin 研究目的及び研究計画の概要空行付き ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	
+\noindent
+宇宙最初期に加速膨張が起こったとするインフレーション機構は, 
+現在様々な宇宙観測から強く支持されているがその具体的な仕組みは明らかになっていない.
+見逃されてきた新たな可能性を探るためにも包括的な解析が必要となっているのが現状である.
+そこで本研究では, 様々なインフレーション理論を統一的に扱える\emph{インフレーションの確率形式}に着目するとともに,
+インフレーションによって作られる特徴的天体である\emph{原始ブラックホール}や\emph{重力波}を通じ,
+インフレーションや初期宇宙の物理に迫ることを目標とする (概要図~\ref{fig: abstract} も参照).
+具体的研究課題は次のように3つに分けられる.
+1つ目は \ul{i) インフレーションの確率形式を理論的に整備するとともに, 数値計算プログラムを開発・公開し, 
+さらに具体的なインフレーション理論の解析}を行うことである.
+また本形式を応用し \ul{ii) 原始ブラックホール形成理論を探るとともに, 正確な原始ブラックホール量の計算法を確立}する. 
+そして原始ブラックホールに関連した \ul{iii) 初期重力波を通じてインフレーションに対して得られる情報を模索}する. 
+以上が本研究計画の概要である.
+
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\hsize]{YLC2020_abstract.pdf}
+	\caption{本研究の3つの要素と最終目的.}
+	\label{fig: abstract}
+\end{figure}
+
+
+
+	
+\vspace*{1zw}	% （概要）と（本文）の間が10行程度になるよう、必要に応じて値を調整してください。	
+%end 研究目的及び研究計画の概要空行付き ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+\noindent
+\rule{\linewidth}{1pt}\\
+\noindent
+\textbf{（本文）}
+%begin 研究目的と研究計画 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+%\JSPSInstructions	% <-- 留意事項。これは消すか、コメントアウトしてください。
+
+\begin{mdframed}[roundcorner=0.5zw,
+	%skipabove=1zw,skipbelow=1zw,
+	innertopmargin=0.8zw,innerbottommargin=0.8zw,
+	%innerleftmargin=0.8zw,innerrightmargin=0.8zw,
+	%rightmargin=5000pt,leftmargin=50pt,
+	linecolor=black!50,linewidth=0.2zw,
+	backgroundcolor=black!10]
+	{\bfseries\gtfamily\sffamily\large 1. 研究の学術的背景および核心となる「問い」}
+\end{mdframed}
+
+\noindent
+現代宇宙論では, 宇宙最初期に\emph{インフレーション}と呼ばれる加速膨張が起こったことが広く支持されている.
+インフレーションは大局的には宇宙を均一にしつつ, 量子力学的効果で細かな空間の歪み (曲率ゆらぎ) も作ることが知られており, 
+ここに物質が集まることで現在の銀河等宇宙構造のもとになると考えられている.
+インフレーションは最初期であるが故, 最高エネルギーを実現しているともされ,
+宇宙論的観点だけでなく素粒子等高エネルギー物理の観点からも「\ul{インフレーションの具体的な仕組みは何か？}」ということは
+重要な学術的問いである.
+近年 Planck 衛星によって初期宇宙のなごりの光 (宇宙背景放射; CMB) が精密に測定され~\cite{Planck:2013jfk},
+インフレーション機構はさらに強く支持されるようになったが, その具体的な仕組みは未だ解明されていない.
+むしろ Planck 衛星の詳細な観測により有力視されていた簡潔な理論の多くは否定されてしまい, 
+より複雑で現実的な理論も視野に入れる必要が出てきているのが現状である.
+
+一方インフレーションにも関係する明るいニュースとして, これまで間接的な証拠しかなかった\emph{重力波 (時空のさざ波)} が, 
+LIGO/Virgo グループによって初めて直接観測された~\cite{Abbott:2016blz}. 
+続く LISA などの重力波観測の人工衛星計画も視野に入り, 「\ul{重力波を用いて何が探求できるか？}」を議論することが
+現在喫緊の課題となっている.
+観測された重力波はブラックホールや中性子星の合体から生じたもので あるが, 
+太陽の 30 倍を超える重いブラックホールも多く見つかっており, そのような「\ul{重いブラックホールの生成機構}」は明らかになっていない.
+それを受け, 通常とは異なる生成機構を持つ\emph{原始ブラックホール}が再注目されている. 
+ブラックホールは主に重い恒星から形成されるが, インフレーションで大きな曲率ゆらぎが作られた場合, 
+宇宙初期にエネルギー密度の濃い領域が直接潰れることでも形成され, これを原始ブラックホールと呼ぶ. 
+原始ブラックホールはいまだに発見されていないが, もし観測されればインフレーション理論の大きな情報となる. 
+さらに原始ブラックホールは重力波源となるだけでなく, いまだ「\ul{正体の明らかになっていない暗黒物質}」の候補でもあり, 天体そのものとしても興味深い.
+
+
+
+
+\begin{mdframed}[roundcorner=0.5zw,
+	%skipabove=1zw,skipbelow=1zw,
+	innertopmargin=0.8zw,innerbottommargin=0.8zw,
+	%innerleftmargin=0.8zw,innerrightmargin=0.8zw,
+	%rightmargin=5000pt,leftmargin=50pt,
+	linecolor=black!50,linewidth=0.2zw,
+	backgroundcolor=black!10]
+	{\bfseries\gtfamily\sffamily\large 2. 研究の目的および学術的独自性}
+\end{mdframed}
+
+\noindent
+以上の背景を踏まえ本研究課題では, \emph{インフレーションの確率形式・原始ブラックホール・重力波}を三位一体とした
+「\ul{インフレーション理論の包括的解析}」を主目的とし,
+また派生として「\ul{暗黒物質や初期宇宙の物理を調査}」することを副目的とする.
+
+インフレーションの確率形式は量子効果由来のインフレーションのゆらぎを古典的乱数で近似して扱う手法である.
+通常の摂動論的量子計算ではインフレーションのゆらぎが小さい場合しか扱うことができないが,
+確率形式にて古典乱数として近似してしまえば大きなゆらぎであっても統一的に扱うことができる.
+したがって大きなゆらぎ由来の天体である原始ブラックホールの生成について議論する際に必要不可欠である.
+原始ブラックホールは\ul{暗黒物質}の候補であるし, また合体から生じる重力波を通じて検証可能性もある.
+さらにもし原始ブラックホールを作るほどインフレーションのゆらぎが大きかった場合,
+原始ブラックホールの合体からだけでなく, 初期宇宙において曲率ゆらぎの振動からも\emph{重力波が誘導}されることが知られている~\cite{Saito:2008jc}.
+そのような誘導重力波は生成時の\ul{初期宇宙プラズマの情報を記録}している可能性がある~\Blue{[Ueda]}.
+
+そこで本研究課題ではインフレーションの理論的側面として確率形式に着目, 本形式を整備し, 
+ゆらぎが大きくなる理論まで含めインフレーション理論の統一的解析を行う.
+また観測的側面として, 確率形式を応用し原始ブラックホールや関連重力波量の正確な計算を行い, インフレーション理論の検証に役立てる.
+確率形式を応用することでこれまで計算できなかった大きなゆらぎやその派生である原始ブラックホール・重力波の正確な計算が可能になること,
+および理論から観測的検証までを一まとめにしてインフレーション機構に迫ることが, 本研究の学術的独自性である.
+
+
+\begin{mdframed}[roundcorner=0.5zw,
+	%skipabove=1zw,skipbelow=1zw,
+	innertopmargin=0.8zw,innerbottommargin=0.8zw,
+	%innerleftmargin=0.8zw,innerrightmargin=0.8zw,
+	%rightmargin=5000pt,leftmargin=50pt,
+	linecolor=black!50,linewidth=0.2zw,
+	backgroundcolor=black!10]
+	{\bfseries\gtfamily\sffamily\large 3. 研究の具体的計画}
+\end{mdframed}
+
+\noindent
+本研究の具体的計画について, 確率形式・原始ブラックホール・重力波の3題目に分けて, 以下に詳細に記す.
+
+\stochastic{インフレーションの確率形式}
+申請者はすでにインフレーションの確率形式を応用し, 実際に大きな曲率ゆらぎにも適用できる計算手法の確立に成功している~\Blue{[Fujita et al. 2013, 2014]}.
+しかしながら本手法の具体的計算には大量の確率標本を数値的に生成する必要があり, 他の研究者が簡単に実装できるものではなかった. 
+2015年に共同研究者でもある Vennin 博士らが本手法を偏微分方程式に焼き直し~\cite{Vennin:2015hra}, 
+いくつかの解析解を与えるとともに, 統一的な数値実装の可能性を示した. そこで我々は現在共同で, 本手法を誰でも簡単に利用できるよう, 
+公開プログラムとしての数値実装を進めている. 
+これにより計算機によるインフレーション理論の自動解析が可能になり, クラスター計算機と組み合わせれば大規模な包括的探査も可能となるだろう.
+具体的研究計画としてまず「\ul{確率的計算プログラムの完成・公開}」が挙げられる
+
+プログラムの完成後は実際に様々なインフレーション理論に適用し解析を行っていく. 詳細は割愛するが, 特に近年幾何学力によって不安定性が生じる理論 
+(\cite{Renaux-Petel:2015mga}等) とスローロール条件を破る理論 (\cite{Ezquiaga:2018gbw}等) に対し, 
+ゆらぎが大きくなり確率形式が必須となる可能性が指摘され注目されている.
+2つ目の研究計画はこのような「\ul{具体的なインフレーション理論に対し確率計算プログラムを適用し解析を行う}」ことである.
+
+最後に原始ブラックホール生成量計算への応用が挙げられる.
+原始ブラックホール生成量はゆらぎの大きさだけでなくその統計性にも大きく依存することが指摘されており (\cite{Ezquiaga:2019ftu}等),
+その正確な計算には「\ul{我々の確率計算手法を様々な統計量に適用できるように拡張}」する必要がある.
+これが3つ目の研究計画である. 申請者はすでに, 曲率ゆらぎの高次統計量を計算する手法について準備研究を行なっており~\Blue{[YT \& Vennin, Suyama, YT, \& Yamaguchi]}, これを応用すればよい.
+
+\medskip
+
+
+\PBH{原始ブラックホール}
+上述のしたように拡張された「\ul{確率形式を用いて原始ブラックホール生成量の正確な計算法を確立}」する.
+またゆらぎの高次統計量由来の原始ブラックホールの空間分布にも着目したい.
+申請者はこれまでに, ゆらぎが高次統計量を持つと原始ブラックホールが密集して形成されることを指摘したが~\Blue{[YT \& Yokoyama '15]},
+これはブラックホール合体の歴史に影響し, したがって合体重力波によって区別できる可能性がある.
+そこで「\ul{ゆらぎの統計性 {$\leftrightarrow$} 形成時の原始ブラックホール空間分布 {$\leftrightarrow$} 現在の合体重力波スペクトルの対応を明確に定式化}」し, 
+重力波から原始ブラックホールを通じてインフレーション理論の情報を得る手段とする.
+
+\medskip
+
+
+\GW{重力波}
+原始ブラックホールが形成されるほど曲率ゆらぎが大きかったとすると, ブラックホールの合体からだけでなく, 曲率ゆらぎの振動からも初期宇宙において
+重力波が誘導生成される. したがってこの誘導重力波を観測することで原始ブラックホールの間接的証拠とすることができる.
+さらに興味深いことに合体ブラックホールとしてちょうど良い太陽質量程度の原始ブラックホールの形成は, 
+初期宇宙でちょうど量子色力学 (QCD) の相転移が起こっている時代である.
+加えて対応する誘導重力波の波数はパルサータイミングアレイ (PTA) と呼ばれる重力波観測法で観測可能な波数にちょうど一致している.
+先日 NANOGrav グループが PTA を用いた重力波観測に初めて成功した可能性があることを発表し注目されている~\cite{Arzoumanian:2020vkk}.
+このような状況のもと申請者はこれまで所属研究室である名古屋大学宇宙論研究室の大学院生らとともに,
+この誘導重力波が QCD プラズマ流体の音速の変化に影響されることを示す研究を行った~\Blue{[Ueda]}.
+本研究では引き続き大学院生らと, NANOGrav 等の「\ul{具体的観測を考慮して初期宇宙プラズマの性質の観測可能性を定量的に議論する}」ことを計画している.
+本研究はインフレーション理論の観点からだけでなく, QCD 理論等の素粒子原子核理論の立場からも重要である.
+
+\bigskip
+
+
+
+\begin{thebibliography}{99}
+
+%\cite{Planck:2013jfk}
+\bibitem{Planck:2013jfk}
+P.~A.~R.~Ade \textit{et al.} [Planck],
+%``Planck 2013 results. XXII. Constraints on inflation,''
+Astron. Astrophys. \textbf{571}, A22 (2014).
+%doi:10.1051/0004-6361/201321569
+%[arXiv:1303.5082 [astro-ph.CO]].
+%1740 citations counted in INSPIRE as of 28 Oct 2020
+
+%\cite{Abbott:2016blz}
+\bibitem{Abbott:2016blz}
+B.~P.~Abbott \textit{et al.} [LIGO Scientific and Virgo],
+%``Observation of Gravitational Waves from a Binary Black Hole Merger,''
+Phys. Rev. Lett. \textbf{116}, no.6, 061102 (2016).
+%doi:10.1103/PhysRevLett.116.061102
+%[arXiv:1602.03837 [gr-qc]].
+%5701 citations counted in INSPIRE as of 28 Oct 2020
+
+%\cite{Saito:2008jc}
+\bibitem{Saito:2008jc}
+R.~Saito and J.~Yokoyama,
+%``Gravitational wave background as a probe of the primordial black hole abundance,''
+Phys. Rev. Lett. \textbf{102}, 161101 (2009)
+[erratum: Phys. Rev. Lett. \textbf{107}, 069901 (2011)].
+%doi:10.1103/PhysRevLett.102.161101
+%[arXiv:0812.4339 [astro-ph]].
+%142 citations counted in INSPIRE as of 28 Oct 2020
+
+%\cite{Vennin:2015hra}
+\bibitem{Vennin:2015hra}
+V.~Vennin and A.~A.~Starobinsky,
+%``Correlation Functions in Stochastic Inflation,''
+Eur. Phys. J. C \textbf{75}, 413 (2015).
+%doi:10.1140/epjc/s10052-015-3643-y
+%[arXiv:1506.04732 [hep-th]].
+%87 citations counted in INSPIRE as of 28 Oct 2020
+
+%\cite{Renaux-Petel:2015mga}
+\bibitem{Renaux-Petel:2015mga}
+S.~Renaux-Petel and K.~Turzy\'nski,
+%``Geometrical Destabilization of Inflation,''
+Phys. Rev. Lett. \textbf{117}, no.14, 141301 (2016).
+%doi:10.1103/PhysRevLett.117.141301
+%[arXiv:1510.01281 [astro-ph.CO]].
+%67 citations counted in INSPIRE as of 28 Oct 2020
+
+%\cite{Ezquiaga:2018gbw}
+\bibitem{Ezquiaga:2018gbw}
+J.~M.~Ezquiaga and J.~Garc\'\i{}a-Bellido,
+%``Quantum diffusion beyond slow-roll: implications for primordial black-hole production,''
+JCAP \textbf{08}, 018 (2018).
+%doi:10.1088/1475-7516/2018/08/018
+%[arXiv:1805.06731 [astro-ph.CO]].
+%49 citations counted in INSPIRE as of 28 Oct 2020
+
+%\cite{Ezquiaga:2019ftu}
+\bibitem{Ezquiaga:2019ftu}
+J.~M.~Ezquiaga, J.~Garc\'\i{}a-Bellido and V.~Vennin,
+%``The exponential tail of inflationary fluctuations: consequences for primordial black holes,''
+JCAP \textbf{03}, 029 (2020).
+%doi:10.1088/1475-7516/2020/03/029
+%[arXiv:1912.05399 [astro-ph.CO]].
+%16 citations counted in INSPIRE as of 28 Oct 2020
+
+%\cite{Arzoumanian:2020vkk}
+\bibitem{Arzoumanian:2020vkk}
+Z.~Arzoumanian \textit{et al.} [NANOGrav],
+%``The NANOGrav 12.5-year Data Set: Search For An Isotropic Stochastic Gravitational-Wave Background,''
+[arXiv:2009.04496 [astro-ph.HE]].
+%36 citations counted in INSPIRE as of 28 Oct 2020
+
+\end{thebibliography}
+
+
+
+%end 研究目的と研究計画 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+\input{pieces/p01_purpose_plan_01}
+
+%#Split: 02_background  
+%#PieceName: p02_background
+\input{pieces/p02_background_00}
+\section{２　本研究の着想に至った経緯など}
+%　　　　＜＜最大　1ページ＞＞
+
+%s03_background
+%begin 本研究の着想に至った経緯など ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+		
+\begin{mdframed}[roundcorner=0.5zw,
+	%skipabove=1zw,skipbelow=1zw,
+	innertopmargin=0.8zw,innerbottommargin=0.8zw,
+	%innerleftmargin=0.8zw,innerrightmargin=0.8zw,
+	%rightmargin=5000pt,leftmargin=50pt,
+	linecolor=black!50,linewidth=0.2zw,
+	backgroundcolor=black!10]
+	{\bfseries\gtfamily\sffamily\large 1. 着想に至った経緯と準備状況}
+\end{mdframed}
+
+\noindent
+本来インフレーションの確率形式ではインフレーション場のゆらぎのみが計算され, 宇宙構造のもととなる曲率ゆらぎを直接計算することはできなかった.
+これに対し, 曲率ゆらぎとインフレーション時間のゆらぎを対応づける $\delta N$ 形式を応用することで曲率ゆらぎを直接計算することができることを発見したこと,
+また我々の計算手法を数学的に整備した Vennin 博士らの研究により数値計算の可能性が開けたことが, 本研究の着想に至った経緯である.
+原始ブラックホールやその間接的証拠としての誘導重力波はすでに世界的に注目されており,
+また原始ブラックホール生成に対する QCD 相転移の影響も議論されていたが~\cite{Byrnes:2018clq},
+誘導重力波に対する影響は見逃されていた.
+大学院生の指導の一環として QCD 相転移と誘導重力波の関係について研究を始めたことがもう1つの経緯である.
+
+準備状況としては, 確率計算プログラムに関してはその大枠は完成しており, 
+またフランスでのポスドク研究員時代からの確率形式の理論的整備に関する研究も先日完成したため~\Blue{[Pinol, YT, Renaux-Petel '18, '20]},
+プログラムの準備は完了し, あとは性能確認と使用手引きを完成させるだけである.
+原始ブラックホールにも応用されるゆらぎの統計量の拡張についても, 準備研究をいくつか発表し~\Blue{[YT \& Vennin, Suyama, YT, \& Yamaguchi]},
+現在も共同研究者らとともに議論を進めている.
+原始ブラックホール形成理論についても申請者は多くの研究を積んでいる~\Blue{[Yanagida et al. ...]}.
+大学院生らとの誘導重力波の研究に関しても先日最初の論文を発表することができた~\Blue{[Ueda]}.
+本研究の準備は順調に進んでいると言える.
+
+
+\begin{mdframed}[roundcorner=0.5zw,
+	%skipabove=1zw,skipbelow=1zw,
+	innertopmargin=0.8zw,innerbottommargin=0.8zw,
+	%innerleftmargin=0.8zw,innerrightmargin=0.8zw,
+	%rightmargin=5000pt,leftmargin=50pt,
+	linecolor=black!50,linewidth=0.2zw,
+	backgroundcolor=black!10]
+	{\bfseries\gtfamily\sffamily\large 2. 本研究の世界的位置付け}
+\end{mdframed}
+
+申請者らの曲率ゆらぎ計算手法の提唱や, Vennin 博士らの数学的整備の研究を受け, 現在インフレーションの確率形式は特にヨーロッパを中心として注目を集めている.
+原始ブラックホールは LIGO/Virgo による合体重力波検出から世界的に注目されており, 誘導重力波も NANOGrav の発表を受け関連研究が多く発表されている.
+ところがそれぞれに特化した研究は多くなされているものの, これらを統合した研究はほとんど行われていない.
+そこで確率形式手法の提唱者であり原始ブラックホールや重力波についても研究を重ねてきた申請者が, 
+その統合研究を先導することは重要であると考えられる.
+そしてインフレーションの理論から観測までを一まとめにした本研究を
+\ul{インフレーション研究の新たな分野に押し進める}ことを目指す.
+また誘導重力波を通して初期宇宙を素粒子原子核の「実験場」として利用する考え方は,
+高エネルギー物理に新たな情報を与えることができるだけでなく,
+日本および世界の重力波観測計画をさらに促進するであろう.
+
+
+
+
+\bigskip
+
+\begin{thebibliography}{99}
+
+%\cite{Byrnes:2018clq}
+\bibitem{Byrnes:2018clq}
+C.~T.~Byrnes, M.~Hindmarsh, S.~Young and M.~R.~S.~Hawkins,
+%``Primordial black holes with an accurate QCD equation of state,''
+JCAP \textbf{08}, 041 (2018).
+%doi:10.1088/1475-7516/2018/08/041
+%[arXiv:1801.06138 [astro-ph.CO]].
+%68 citations counted in INSPIRE as of 28 Oct 2020
+
+\end{thebibliography}
+
+		
+		
+%end 本研究の着想に至った経緯など ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+\input{pieces/p02_background_01}
+
+%#Split: 03_abilities  
+%#PieceName: p03_abilities
+\input{pieces/p03_abilities_00}
+\section{３　応募者の研究遂行能力及び研究環境}
+%　　　　＜＜最大　2ページ＞＞
+
+% s14_abilities
+%begin 応募者の研究遂行能力及び研究環境 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+%\PapersInstructions	% <-- 研究業績留意事項。これは消すか、コメントアウトしてください。
+
+\begin{mdframed}[roundcorner=0.5zw,
+	%skipabove=1zw,skipbelow=1zw,
+	innertopmargin=0.8zw,innerbottommargin=0.8zw,
+	%innerleftmargin=0.8zw,innerrightmargin=0.8zw,
+	%rightmargin=5000pt,leftmargin=50pt,
+	linecolor=black!50,linewidth=0.2zw,
+	backgroundcolor=black!10]
+	{\bfseries\gtfamily\sffamily\large 1. これまでの研究活動}
+\end{mdframed}
+
+\noindent
+申請者はこれまで\ul{21本の論文}を発表し, \ul{24件の国際会議}, \ul{22件の国内外研究所でのセミナー発表}を行なっている.
+2019年にはブラジルとの2国間研究会 ``FAPESP-JSPS Workshop on dark energy, dark matter, and galaxies"
+にて\ul{若手代表発表者として選出}され, 原始ブラックホールに関する発表を行った.
+フェローシップとして\ul{フォトンサイエンス・リーディング大学院}や\ul{日本学術振興会特別研究員 DC2 および PD} に採用され,
+\ul{科学研究費助成事業若手研究 (1回目)} にも採択されている.
+これら研究資金を利用して海外経験も積み, 学生の時から海外研究者とも共同研究を行ってきた. 
+2017 年度は\ul{フランス国立科学研究センター (CNRS) に PD 研究員として採用}されパリ天体物理学研究所 (IAP) に滞在していたが, 
+特別研究員 PD に採用されたため任期途中で切り上げ帰国することとなり, 現在は名古屋大学に所属している.
+今年度採用分の\ul{名古屋大学高等研究院 YLC 特任助教として内定}され, 来年度からも引き続き名古屋大学宇宙論研究室に所属し,
+安定した研究活動と大学院生の研究指導を行うことができる.
+その他の詳細な経歴については申請者の web ページ \url{https://nekomammat.github.io/indexJP.html}も参照されたい.
+
+研究テーマは主にインフレーションに関連した初期宇宙の物理についてである.
+最初の論文~\cite{Fujita:2013cna} ではインフレーションの確率形式において曲率ゆらぎを直接計算する手法を提唱し,
+続く論文~\cite{Fujita:2014tja} では本手法を実際にゆらぎが大きくなり従来手法が破綻する理論に適用し, 初めて曲率ゆらぎの定量的な計算に成功した.
+論文~\cite{Kawasaki:2015ppx} では当理論における原始ブラックホール形成も議論し, 現実的な確率形式の利用法を確立してきたと言える.
+フランスポスドク時代では, これまで多くの研究者が使ってきたインフレーション確率形式の素朴な定式化では数学的に不定性があり,
+より一般的なインフレーション理論に対して運動方程式が1つに定まらない問題があることを発見した~\cite{Pinol:2018euk}.
+日本に戻ってきてからもフランスの共同研究者らと研究を続け, 先日ついに数学的に一意で, 一般的なインフレーション理論に対しても適用可能な
+確率形式の定式化に成功し~\cite{Pinol:2020cdp}, インフレーション理論の大規模包括的解析の準備が整ったと言える.
+
+原始ブラックホールについては一連の研究~\cite{Kawasaki:2016pql,Inomata:2016rbd,Inomata:2017okj,Inomata:2017uaw} が業界から注目されている.
+
+
+\begin{mdframed}[roundcorner=0.5zw,
+	%skipabove=1zw,skipbelow=1zw,
+	innertopmargin=0.8zw,innerbottommargin=0.8zw,
+	%innerleftmargin=0.8zw,innerrightmargin=0.8zw,
+	%rightmargin=5000pt,leftmargin=50pt,
+	linecolor=black!50,linewidth=0.2zw,
+	backgroundcolor=black!10]
+	{\bfseries\gtfamily\sffamily\large 2. 研究環境}
+\end{mdframed}
+
+
+\begin{thebibliography}{99}
+
+%\cite{Fujita:2013cna}
+\bibitem{Fujita:2013cna}
+T.~Fujita, M.~Kawasaki, Y.~Tada and T.~Takesako,
+%``A new algorithm for calculating the curvature perturbations in stochastic inflation,''
+JCAP \textbf{12}, 036 (2013).
+%doi:10.1088/1475-7516/2013/12/036
+%[arXiv:1308.4754 [astro-ph.CO]].
+%33 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Fujita:2014tja}
+\bibitem{Fujita:2014tja}
+T.~Fujita, M.~Kawasaki and Y.~Tada,
+%``Non-perturbative approach for curvature perturbations in stochastic $\delta N$ formalism,''
+JCAP \textbf{10}, 030 (2014).
+%doi:10.1088/1475-7516/2014/10/030
+%[arXiv:1405.2187 [astro-ph.CO]].
+%33 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Kawasaki:2015ppx}
+\bibitem{Kawasaki:2015ppx}
+M.~Kawasaki and Y.~Tada,
+%``Can massive primordial black holes be produced in mild waterfall hybrid inflation?,''
+JCAP \textbf{08}, 041 (2016).
+%doi:10.1088/1475-7516/2016/08/041
+%[arXiv:1512.03515 [astro-ph.CO]].
+%32 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Pinol:2018euk}
+\bibitem{Pinol:2018euk}
+L.~Pinol, S.~Renaux-Petel and Y.~Tada,
+%``Inflationary stochastic anomalies,''
+Class. Quant. Grav. \textbf{36}, no.7, 07LT01 (2019).
+%doi:10.1088/1361-6382/ab097f
+%[arXiv:1806.10126 [gr-qc]].
+%17 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Pinol:2020cdp}
+\bibitem{Pinol:2020cdp}
+L.~Pinol, S.~Renaux-Petel and Y.~Tada,
+%``A manifestly covariant theory of multifield stochastic inflation in phase space,''
+[arXiv:2008.07497 [astro-ph.CO]].
+%5 citations counted in INSPIRE as of 29 Oct 2020
+
+
+%\cite{Kawasaki:2016pql}
+\bibitem{Kawasaki:2016pql}
+M.~Kawasaki, A.~Kusenko, Y.~Tada and T.~T.~Yanagida,
+%``Primordial black holes as dark matter in supergravity inflation models,''
+Phys. Rev. D \textbf{94}, no.8, 083523 (2016).
+%doi:10.1103/PhysRevD.94.083523
+%[arXiv:1606.07631 [astro-ph.CO]].
+%81 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Inomata:2016rbd}
+\bibitem{Inomata:2016rbd}
+K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida,
+%``Inflationary primordial black holes for the LIGO gravitational wave events and pulsar timing array experiments,''
+Phys. Rev. D \textbf{95}, no.12, 123510 (2017).
+%doi:10.1103/PhysRevD.95.123510
+%[arXiv:1611.06130 [astro-ph.CO]].
+%103 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Inomata:2017okj}
+\bibitem{Inomata:2017okj}
+K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida,
+%``Inflationary Primordial Black Holes as All Dark Matter,''
+Phys. Rev. D \textbf{96}, no.4, 043504 (2017).
+%doi:10.1103/PhysRevD.96.043504
+%[arXiv:1701.02544 [astro-ph.CO]].
+%92 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Inomata:2017uaw}
+\bibitem{Inomata:2017uaw}
+K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida,
+%``$\mathcal O(10) M_\odot$ primordial black holes and string axion dark matter,''
+Phys. Rev. D \textbf{96}, no.12, 123527 (2017).
+%doi:10.1103/PhysRevD.96.123527
+%[arXiv:1709.07865 [astro-ph.CO]].
+%7 citations counted in INSPIRE as of 29 Oct 2020
+
+\end{thebibliography}
+
+
+%end 応募者の研究遂行能力及び研究環境 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+%begin 研究業績リスト ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	%\begin{enumerate}
+		%\paper{Search for whale eggs}{\yukawa\ \etal}{Rev.\ Oceanic Mysteries}{888}{99}{2017}
+			%\label{pub:whale}
+				
+		%\paper{Theory of Elephant Eggs}{\yukawa, Kara Juzo \etal}{\prl}{800}{800-804}{2005}
+			%\label{pub:theoegg}
+				
+		%\paper{仔象は死んだ}{Kobo Abe}{安部公房全集}{26}{100-200}{2004}
+		
+		%\paper{The Elephant's Child (象の鼻はなぜ長い)}{R.~Kipling}{Nature}{999}{777-799}{2003}
+
+		%\paper{You can't Lay an Egg If You're an Elephant}{F.~Ehrlich}
+			%{JofUR\\({\tt www.universalrejection.org})}{{\bf N/A}}{2002}
+		
+		% 下のように書いてもいいけど、めんどくさいし、表示の仕方を変えようとしたら大変。
+		%\item ``Egg of Elephant-Bird'', 
+				%\underline{A.~Cooper},
+				%Nature, {\bf 409}, 704-707 (2001).	% 	
+		%\input{jack_pub}	% << only for demonstration. Please delete it or comment it out.
+	%\end{enumerate}
+%end 研究業績リスト ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+\input{pieces/p03_abilities_01}
+
+%#Split: 05_rights  
+%#PieceName: p05_rights
+\input{pieces/p05_rights_00}
+\section{４　人権の保護及び法令等の遵守への対応}
+%　　　　＜＜最大　1ページ＞＞
+
+% s09_rights
+%begin 人権の保護及び法令等の遵守への対応 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	
+	\noindent
+	該当しない.
+	
+%end 人権の保護及び法令等の遵守への対応 ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+\input{pieces/p05_rights_01}
+
+%#Split: 99_tail
+\input{pieces/hook9} % pieces
+\end{document}
+
