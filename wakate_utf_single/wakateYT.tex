@@ -17,7 +17,7 @@
 %----- 研究機関名と研究代表者の氏名-----------------------
 \newcommand{\研究機関名}{名古屋大学}
 \newcommand{\研究代表者氏名}{多田祐一郎}
-\newcommand{\me}{\underline{\underline{Y.~Tada}}} 
+\newcommand{\me}{\underline{\underline{Y.~Tada}}\xspace} 
 %---- 研究期間の最終年度 ----------------
 \newcommand{\研究期間の最終元号年度}{6}  %令和で、半角数字のみ
 %========================================
@@ -28,7 +28,7 @@
 % ===== my favorite packages ====================================
 % ここに、自分の使いたいパッケージを宣言して下さい。
 \usepackage{wrapfig}
-%\usepackage{amssymb}
+\usepackage{amssymb}
 %\usepackage{mb}
 %\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 \usepackage{lineno}
@@ -43,6 +43,8 @@
 , linkcolor = darkblue]{hyperref}
 \usepackage{cite}
 \usepackage{url}
+\usepackage{physics}
+\usepackage{xspace}
 
 
 
@@ -191,23 +193,23 @@
 \noindent
 現代宇宙論では, 宇宙最初期に\emph{インフレーション}と呼ばれる加速膨張が起こったことが広く支持されている.
 インフレーションは大局的には宇宙を均一にしつつ, 量子力学的効果で細かな空間の歪み (曲率ゆらぎ) も作ることが知られており, 
-ここに物質が集まることで現在の銀河等宇宙構造のもとになると考えられている.
-インフレーションは最初期であるが故, 最高エネルギーを実現しているともされ,
-宇宙論的観点だけでなく素粒子等高エネルギー物理の観点からも「\ul{インフレーションの具体的な仕組みは何か？}」ということは
+その歪みに物質が集まることで現在の銀河等宇宙構造のもとになると考えられている.
+インフレーションは最初期であるがゆえ, 最高エネルギーを実現しているともされ,
+宇宙論的観点だけでなく素粒子理論などの高エネルギー物理の観点からも「\ul{インフレーションの具体的な仕組みは何か？}」ということは
 重要な学術的問いである.
 近年 Planck 衛星によって初期宇宙のなごりの光 (宇宙背景放射; CMB) が精密に測定され~\cite{Planck:2013jfk},
 インフレーション機構はさらに強く支持されるようになったが, その具体的な仕組みは未だ解明されていない.
 むしろ Planck 衛星の詳細な観測により有力視されていた簡潔な理論の多くは否定されてしまい, 
 より複雑で現実的な理論も視野に入れる必要が出てきているのが現状である.
 
-一方インフレーションにも関係する明るいニュースとして, これまで間接的な証拠しかなかった\emph{重力波 (時空のさざ波)} が, 
+一方インフレーションにも関係する明るい話題として, これまで間接的な証拠しかなかった\emph{重力波 (時空のさざ波)} が, 
 LIGO/Virgo グループによって初めて直接観測された~\cite{Abbott:2016blz}. 
 続く LISA などの重力波観測の人工衛星計画も視野に入り, 「\ul{重力波を用いて何が探求できるか？}」を議論することが
 現在喫緊の課題となっている.
-観測された重力波はブラックホールや中性子星の合体から生じたもので あるが, 
+観測された重力波はブラックホールや中性子星の合体から生じたものであるが, 
 太陽の 30 倍を超える重いブラックホールも多く見つかっており, そのような「\ul{重いブラックホールの生成機構}」は明らかになっていない.
 それを受け, 通常とは異なる生成機構を持つ\emph{原始ブラックホール}が再注目されている. 
-ブラックホールは主に重い恒星から形成されるが, インフレーションで大きな曲率ゆらぎが作られた場合, 
+ブラックホールは通常重い恒星の爆発によって形成されるが, インフレーションで大きな曲率ゆらぎが作られた場合, 
 宇宙初期にエネルギー密度の濃い領域が直接潰れることでも形成され, これを原始ブラックホールと呼ぶ. 
 原始ブラックホールはいまだに発見されていないが, もし観測されればインフレーション理論の大きな情報となる. 
 さらに原始ブラックホールは重力波源となるだけでなく, いまだ「\ul{正体の明らかになっていない暗黒物質}」の候補でもあり, 天体そのものとしても興味深い.
@@ -233,17 +235,17 @@ LIGO/Virgo グループによって初めて直接観測された~\cite{Abbott:2
 インフレーションの確率形式は量子効果由来のインフレーションのゆらぎを古典的乱数で近似して扱う手法である.
 通常の摂動論的量子計算ではインフレーションのゆらぎが小さい場合しか扱うことができないが,
 確率形式にて古典乱数として近似してしまえば大きなゆらぎであっても統一的に扱うことができる.
-したがって大きなゆらぎ由来の天体である原始ブラックホールの生成について議論する際に必要不可欠である.
+したがって大きなゆらぎ由来の天体である原始ブラックホールの生成などについて議論する際に必要不可欠である.
 原始ブラックホールは\ul{暗黒物質}の候補であるし, また合体から生じる重力波を通じて検証可能性もある.
 さらにもし原始ブラックホールを作るほどインフレーションのゆらぎが大きかった場合,
 原始ブラックホールの合体からだけでなく, 初期宇宙において曲率ゆらぎの振動からも\emph{重力波が誘導}されることが知られている~\cite{Saito:2008jc}.
-そのような誘導重力波は生成時の\ul{初期宇宙プラズマの情報を記録}している可能性がある~\Blue{[Ueda]}.
+そのような誘導重力波は生成時の\ul{初期宇宙プラズマの情報を記録}している可能性がある~(3-\cite{Abe:2020sqb}).
 
 そこで本研究課題ではインフレーションの理論的側面として確率形式に着目, 本形式を整備し, 
 ゆらぎが大きくなる理論まで含めインフレーション理論の統一的解析を行う.
 また観測的側面として, 確率形式を応用し原始ブラックホールや関連重力波量の正確な計算を行い, インフレーション理論の検証に役立てる.
-確率形式を応用することでこれまで計算できなかった大きなゆらぎやその派生である原始ブラックホール・重力波の正確な計算が可能になること,
-および理論から観測的検証までを一まとめにしてインフレーション機構に迫ることが, 本研究の学術的独自性である.
+確率形式を応用することで\ul{これまで計算できなかった大きなゆらぎやその派生である原始ブラックホール・重力波の正確な計算が可能になる}こと,
+および\ul{理論から観測的検証までを一まとめ}にしてインフレーション機構に迫ることが, 本研究の学術的独自性である.
 
 
 \begin{mdframed}[roundcorner=0.5zw,
@@ -260,9 +262,9 @@ LIGO/Virgo グループによって初めて直接観測された~\cite{Abbott:2
 本研究の具体的計画について, 確率形式・原始ブラックホール・重力波の3題目に分けて, 以下に詳細に記す.
 
 \stochastic{インフレーションの確率形式}
-申請者はすでにインフレーションの確率形式を応用し, 実際に大きな曲率ゆらぎにも適用できる計算手法の確立に成功している~\Blue{[Fujita et al. 2013, 2014]}.
+申請者はすでにインフレーションの確率形式を応用し, 実際に大きな曲率ゆらぎにも適用できる計算手法の確立に成功している~(3-\cite{Fujita:2013cna,Fujita:2014tja}).
 しかしながら本手法の具体的計算には大量の確率標本を数値的に生成する必要があり, 他の研究者が簡単に実装できるものではなかった. 
-2015年に共同研究者でもある Vennin 博士らが本手法を偏微分方程式に焼き直し~\cite{Vennin:2015hra}, 
+2015年に共同研究者でもある \emph{Vincent Vennin 氏 (APC 研究員)} らが本手法を偏微分方程式に焼き直し~\cite{Vennin:2015hra}, 
 いくつかの解析解を与えるとともに, 統一的な数値実装の可能性を示した. そこで我々は現在共同で, 本手法を誰でも簡単に利用できるよう, 
 公開プログラムとしての数値実装を進めている. 
 これにより計算機によるインフレーション理論の自動解析が可能になり, クラスター計算機と組み合わせれば大規模な包括的探査も可能となるだろう.
@@ -276,15 +278,15 @@ LIGO/Virgo グループによって初めて直接観測された~\cite{Abbott:2
 最後に原始ブラックホール生成量計算への応用が挙げられる.
 原始ブラックホール生成量はゆらぎの大きさだけでなくその統計性にも大きく依存することが指摘されており (\cite{Ezquiaga:2019ftu}等),
 その正確な計算には「\ul{我々の確率計算手法を様々な統計量に適用できるように拡張}」する必要がある.
-これが3つ目の研究計画である. 申請者はすでに, 曲率ゆらぎの高次統計量を計算する手法について準備研究を行なっており~\Blue{[YT \& Vennin, Suyama, YT, \& Yamaguchi]}, これを応用すればよい.
+これが3つ目の研究計画である. 申請者はすでに, 曲率ゆらぎの高次統計量を計算する手法について準備研究を行なっており~\cite{Tada:2016pmk,Suyama:2020akr}, これを応用すればよい.
 
 \medskip
 
 
 \PBH{原始ブラックホール}
-上述のしたように拡張された「\ul{確率形式を用いて原始ブラックホール生成量の正確な計算法を確立}」する.
+原始ブラックホールに関しては, まず上述した拡張確率形式を応用して「\ul{原始ブラックホール生成量の正確な計算法を確立}」する研究を行う.
 またゆらぎの高次統計量由来の原始ブラックホールの空間分布にも着目したい.
-申請者はこれまでに, ゆらぎが高次統計量を持つと原始ブラックホールが密集して形成されることを指摘したが~\Blue{[YT \& Yokoyama '15]},
+申請者はこれまでに, ゆらぎが高次統計量を持つと原始ブラックホールが密集して形成されることを指摘したが~(3-\cite{Tada:2015noa}),
 これはブラックホール合体の歴史に影響し, したがって合体重力波によって区別できる可能性がある.
 そこで「\ul{ゆらぎの統計性 {$\leftrightarrow$} 形成時の原始ブラックホール空間分布 {$\leftrightarrow$} 現在の合体重力波スペクトルの対応を明確に定式化}」し, 
 重力波から原始ブラックホールを通じてインフレーション理論の情報を得る手段とする.
@@ -294,14 +296,14 @@ LIGO/Virgo グループによって初めて直接観測された~\cite{Abbott:2
 
 \GW{重力波}
 原始ブラックホールが形成されるほど曲率ゆらぎが大きかったとすると, ブラックホールの合体からだけでなく, 曲率ゆらぎの振動からも初期宇宙において
-重力波が誘導生成される. したがってこの誘導重力波を観測することで原始ブラックホールの間接的証拠とすることができる.
+重力波が誘導生成されることが知られている. したがってこの誘導重力波を観測することで原始ブラックホールの間接的証拠とすることができる.
 さらに興味深いことに合体ブラックホールとしてちょうど良い太陽質量程度の原始ブラックホールの形成は, 
 初期宇宙でちょうど量子色力学 (QCD) の相転移が起こっている時代である.
 加えて対応する誘導重力波の波数はパルサータイミングアレイ (PTA) と呼ばれる重力波観測法で観測可能な波数にちょうど一致している.
-先日 NANOGrav グループが PTA を用いた重力波観測に初めて成功した可能性があることを発表し注目されている~\cite{Arzoumanian:2020vkk}.
+先日 NANOGrav グループがこの PTA を用いた重力波観測に初めて成功した可能性があることを発表し注目されている~\cite{Arzoumanian:2020vkk}.
 このような状況のもと申請者はこれまで所属研究室である名古屋大学宇宙論研究室の大学院生らとともに,
-この誘導重力波が QCD プラズマ流体の音速の変化に影響されることを示す研究を行った~\Blue{[Ueda]}.
-本研究では引き続き大学院生らと, NANOGrav 等の「\ul{具体的観測を考慮して初期宇宙プラズマの性質の観測可能性を定量的に議論する}」ことを計画している.
+この誘導重力波が QCD プラズマ流体の音速の変化に影響されることを示す研究を行った~(3-\cite{Abe:2020sqb}).
+本研究では引き続き大学院生らとともに, NANOGrav 等の「\ul{具体的観測を考慮して初期宇宙プラズマの性質の観測可能性を定量的に議論する}」ことを計画している.
 本研究はインフレーション理論の観点からだけでなく, QCD 理論等の素粒子原子核理論の立場からも重要である.
 
 \bigskip
@@ -309,6 +311,9 @@ LIGO/Virgo グループによって初めて直接観測された~\cite{Abbott:2
 
 
 \begin{thebibliography}{99}
+
+\scriptsize % フォントサイズを下げる
+\setlength{\itemsep}{-2pt} % 行間を縮める
 
 %\cite{Planck:2013jfk}
 \bibitem{Planck:2013jfk}
@@ -374,6 +379,22 @@ JCAP \textbf{03}, 029 (2020).
 %[arXiv:1912.05399 [astro-ph.CO]].
 %16 citations counted in INSPIRE as of 28 Oct 2020
 
+%\cite{Tada:2016pmk}
+\bibitem{Tada:2016pmk}
+\me and V.~Vennin,
+%``Squeezed bispectrum in the $\delta N$ formalism: local observer effect in field space,''
+JCAP \textbf{02}, 021 (2017)
+doi:10.1088/1475-7516/2017/02/021
+[arXiv:1609.08876 [astro-ph.CO]].
+%16 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Suyama:2020akr}
+\bibitem{Suyama:2020akr}
+T.~Suyama, \me and M.~Yamaguchi,
+%``Local observer effect on the cosmological soft theorem,''
+[arXiv:2008.13364 [astro-ph.CO]].
+%2 citations counted in INSPIRE as of 29 Oct 2020
+
 %\cite{Arzoumanian:2020vkk}
 \bibitem{Arzoumanian:2020vkk}
 Z.~Arzoumanian \textit{et al.} [NANOGrav],
@@ -411,19 +432,22 @@ Z.~Arzoumanian \textit{et al.} [NANOGrav],
 \noindent
 本来インフレーションの確率形式ではインフレーション場のゆらぎのみが計算され, 宇宙構造のもととなる曲率ゆらぎを直接計算することはできなかった.
 これに対し, 曲率ゆらぎとインフレーション時間のゆらぎを対応づける $\delta N$ 形式を応用することで曲率ゆらぎを直接計算することができることを発見したこと,
-また我々の計算手法を数学的に整備した Vennin 博士らの研究により数値計算の可能性が開けたことが, 本研究の着想に至った経緯である.
-原始ブラックホールやその間接的証拠としての誘導重力波はすでに世界的に注目されており,
+また我々の計算手法を数学的に整備した Vennin 氏らの研究により数値計算の可能性が開けたことが, 本研究の着想に至った経緯である.
+以降イギリスの \emph{David Wands 氏 (ICG 教授)} らにより原始ブラックホールへの応用や (\cite{Pattison:2017mbe} 等), 
+オランダの \emph{Tomislav Prokopec 氏 (Utrecht 准教授)} らによりスローロール近似を超えた適用などが議論され (\cite{Prokopec:2019srf} 等),
+特にヨーロッパを中心に注目を集めている.
+一方原始ブラックホールやその間接的証拠としての誘導重力波はすでに世界的に注目されており,
 また原始ブラックホール生成に対する QCD 相転移の影響も議論されていたが~\cite{Byrnes:2018clq},
-誘導重力波に対する影響は見逃されていた.
+誘導重力波に対する相転移の影響は見逃されていた.
 大学院生の指導の一環として QCD 相転移と誘導重力波の関係について研究を始めたことがもう1つの経緯である.
 
-準備状況としては, 確率計算プログラムに関してはその大枠は完成しており, 
-またフランスでのポスドク研究員時代からの確率形式の理論的整備に関する研究も先日完成したため~\Blue{[Pinol, YT, Renaux-Petel '18, '20]},
-プログラムの準備は完了し, あとは性能確認と使用手引きを完成させるだけである.
-原始ブラックホールにも応用されるゆらぎの統計量の拡張についても, 準備研究をいくつか発表し~\Blue{[YT \& Vennin, Suyama, YT, \& Yamaguchi]},
+準備状況としては, 確率計算プログラムに関してその大枠は完成しており, 
+またフランスでのポスドク研究員時代からの確率形式の理論的整備に関する研究も先日完成したため~(3-\cite{Pinol:2018euk,Pinol:2020cdp}),
+数値プログラムの準備は完了し, あとは性能確認と使用手引きを完成させるだけである.
+原始ブラックホールにも応用されるゆらぎの統計量の拡張についても, 準備研究をいくつか発表し~(1-\cite{Tada:2016pmk,Suyama:2020akr}),
 現在も共同研究者らとともに議論を進めている.
-原始ブラックホール形成理論についても申請者は多くの研究を積んでいる~\Blue{[Yanagida et al. ...]}.
-大学院生らとの誘導重力波の研究に関しても先日最初の論文を発表することができた~\Blue{[Ueda]}.
+原始ブラックホール形成理論についても申請者は多くの研究を積んでいる~(3-\cite{Kawasaki:2016pql,Inomata:2016rbd,Inomata:2017okj,Inomata:2017uaw} 等).
+大学院生らとの誘導重力波の研究に関しても先日最初の論文を発表することができた~(3-\cite{Abe:2020sqb}).
 本研究の準備は順調に進んでいると言える.
 
 
@@ -437,16 +461,18 @@ Z.~Arzoumanian \textit{et al.} [NANOGrav],
 	{\bfseries\gtfamily\sffamily\large 2. 本研究の世界的位置付け}
 \end{mdframed}
 
-申請者らの曲率ゆらぎ計算手法の提唱や, Vennin 博士らの数学的整備の研究を受け, 現在インフレーションの確率形式は特にヨーロッパを中心として注目を集めている.
+\noindent
+申請者らの曲率ゆらぎ計算手法の提唱や, Vennin 氏らの数学的整備の研究を受け, 現在インフレーションの確率形式は特にヨーロッパを中心として注目を集めている.
 原始ブラックホールは LIGO/Virgo による合体重力波検出から世界的に注目されており, 誘導重力波も NANOGrav の発表を受け関連研究が多く発表されている.
 ところがそれぞれに特化した研究は多くなされているものの, これらを統合した研究はほとんど行われていない.
+これは特に確率形式の理解が浸透しきっていないためである.
 そこで確率形式手法の提唱者であり原始ブラックホールや重力波についても研究を重ねてきた申請者が, 
 その統合研究を先導することは重要であると考えられる.
 そしてインフレーションの理論から観測までを一まとめにした本研究を
 \ul{インフレーション研究の新たな分野に押し進める}ことを目指す.
 また誘導重力波を通して初期宇宙を素粒子原子核の「実験場」として利用する考え方は,
 高エネルギー物理に新たな情報を与えることができるだけでなく,
-日本および世界の重力波観測計画をさらに促進するであろう.
+日本および世界の重力波観測計画をさらに促進することができるであろう.
 
 
 
@@ -454,6 +480,25 @@ Z.~Arzoumanian \textit{et al.} [NANOGrav],
 \bigskip
 
 \begin{thebibliography}{99}
+
+\scriptsize % フォントサイズを下げる
+\setlength{\itemsep}{-2pt} % 行間を縮める
+
+%\cite{Pattison:2017mbe}
+\bibitem{Pattison:2017mbe}
+C.~Pattison, V.~Vennin, H.~Assadullahi and D.~Wands,
+%``Quantum diffusion during inflation and primordial black holes,''
+JCAP \textbf{10}, 046 (2017).
+%doi:10.1088/1475-7516/2017/10/046
+%[arXiv:1707.00537 [hep-th]].
+%66 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Prokopec:2019srf}
+\bibitem{Prokopec:2019srf}
+T.~Prokopec and G.~Rigopoulos,
+%``$\Delta\mathcal{N}$ and the stochastic conveyor belt of Ultra Slow-Roll,''
+[arXiv:1910.08487 [gr-qc]].
+%5 citations counted in INSPIRE as of 29 Oct 2020
 
 %\cite{Byrnes:2018clq}
 \bibitem{Byrnes:2018clq}
@@ -507,14 +552,28 @@ JCAP \textbf{08}, 041 (2018).
 
 研究テーマは主にインフレーションに関連した初期宇宙の物理についてである.
 最初の論文~\cite{Fujita:2013cna} ではインフレーションの確率形式において曲率ゆらぎを直接計算する手法を提唱し,
-続く論文~\cite{Fujita:2014tja} では本手法を実際にゆらぎが大きくなり従来手法が破綻する理論に適用し, 初めて曲率ゆらぎの定量的な計算に成功した.
+続く論文~\cite{Fujita:2014tja} では本手法を実際に, ゆらぎが大きくなって従来手法が破綻する理論に適用し, 初めて曲率ゆらぎの定量的な計算に成功した.
 論文~\cite{Kawasaki:2015ppx} では当理論における原始ブラックホール形成も議論し, 現実的な確率形式の利用法を確立してきたと言える.
-フランスポスドク時代では, これまで多くの研究者が使ってきたインフレーション確率形式の素朴な定式化では数学的に不定性があり,
+フランスポスドク時代には, これまで多くの研究者が利用してきた素朴なインフレーション確率形式の定式化では, 数学的に不定性があり,
 より一般的なインフレーション理論に対して運動方程式が1つに定まらない問題があることを発見した~\cite{Pinol:2018euk}.
 日本に戻ってきてからもフランスの共同研究者らと研究を続け, 先日ついに数学的に一意で, 一般的なインフレーション理論に対しても適用可能な
 確率形式の定式化に成功し~\cite{Pinol:2020cdp}, インフレーション理論の大規模包括的解析の準備が整ったと言える.
 
 原始ブラックホールについては一連の研究~\cite{Kawasaki:2016pql,Inomata:2016rbd,Inomata:2017okj,Inomata:2017uaw} が業界から注目されている.
+原始ブラックホールの実現には大きな曲率ゆらぎが必要になる一方, 大規模スケール ($\gtrsim1\,\mathrm{Mpc}$) においては曲率ゆらぎが非常に小さかったことが CMB 等の宇宙観測からわかっており,
+したがってこれまで原始ブラックホールを実現するインフレーション理論にはパラメータの細かい調整を必要とする不自然なものが多かった.
+一方我々はインフレーションが2回以上起き, 大規模スケールと原始ブラックホールスケールのゆらぎが異なるインフレーションに対応していたとすれば, 非常に簡単に原始ブラックホールを実現できることを指摘した.
+このような多段階インフレーションは, 量子重力理論の候補である超弦理論の文脈から支持されることも議論している~\cite{Kogai:2020jkq}.
+同じく名古屋大学宇宙論研究室所属の\emph{横山修一郎氏 (名古屋大学助教)} とはこのような多段階インフレーションにて, LIGO/Virgo の合体ブラックホール, 暗黒物質, そして OGLE グループが発見した銀河中心に向けての正体不明の重力レンズ現象~\cite{Niikura:2019kqi}
+の全てを原始ブラックホールで同時に説明することができること示した~\cite{Tada:2019amh}.
+横山氏とはゆらぎの統計性が原始ブラックホールの密集形成に影響することも指摘し~\cite{Tada:2015noa}, これは合体重力波の頻度の観点からも重要である.
+
+これまで申請者は現研究室で大学院生の研究指導にも積極的に貢献してきたが~\cite{Kogai:2020jkq,Mikura:2020qhc,Abe:2020sqb},
+論文~\cite{Abe:2020sqb} では大学院生らとともに, 誘導重力波が QCD 相転移プラズマの音速の変化に影響されることを示し, 
+したがって誘導重力波の詳細な観測によって初期宇宙の QCD 相転移プラズマの性質を探り得る可能性があることを示唆した.
+引き続き具体的な重力波観測計画を考慮し, プラズマパラメータの観測可能性を定量的に議論する研究を行う予定である.
+
+以上が申請者のこれまでの研究活動と実績の簡単なまとめであり, 本研究課題の遂行可能性を示す客観的証拠であると言える.
 
 
 \begin{mdframed}[roundcorner=0.5zw,
@@ -527,12 +586,30 @@ JCAP \textbf{08}, 041 (2018).
 	{\bfseries\gtfamily\sffamily\large 2. 研究環境}
 \end{mdframed}
 
+\noindent
+名古屋大学高等研究院の YLC 特任助教に内定されたため, 引き続き名古屋大学宇宙論研究室で安定した研究活動が可能である.
+当研究室においてすでに研究者および大学院生らとの共同研究実績を挙げており, 本研究課題に対して研究環境が適していることを示している.
+特に原始ブラックホールに関しては当分野を先導している横山氏や\emph{柳哲文氏 (名古屋大学講師)} の助けを借りることができるため, 非常に優れた研究環境だと言える.
+確率形式の大規模計算に対して, 当研究室はクラスター計算機 ``galaxy" を所有しており研究に役立つであろう.
+また本研究課題は国内においては\emph{藤田智弘氏 (東京大学研究員)} や\emph{徳田順生氏 (神戸大学研究員)} との共同研究を計画しており,
+名古屋大学は各研究所に対し地理的に中心に位置しているため, 共同研究を進めやすい.
+国外研究者としてはフランスの共同研究者である Vennin 氏や \emph{S\'ebastien Renaux-Petel 氏 (IAP 研究員)}, \emph{Lucas Pinol 氏 (IAP 大学院生)} との引き続きの共同研究はもちろん,
+イギリスの Wands 氏や \emph{Christian Byrnes 氏 (Sussex 上級主任研究員)}, イタリアの \emph{Sabino Matarrese 氏 (Padova 教授)} や \emph{Nicola Bartolo 氏 (Padova 准教授)}
+との議論および協力を予定している (実際直近では 2020 年 11 月に Padova グループでのオンラインセミナー発表を依頼されている).
+普段は電子メールやオンライン会議, チャットツールを駆使して連絡をとっているが, より円滑な共同研究活動のためには旅費や設備準備費として本科学研究費が必要不可欠である.
+
+
+
+\bigskip
 
 \begin{thebibliography}{99}
 
+\scriptsize % フォントサイズを下げる
+\setlength{\itemsep}{-2pt} % 行間を縮める
+
 %\cite{Fujita:2013cna}
 \bibitem{Fujita:2013cna}
-T.~Fujita, M.~Kawasaki, Y.~Tada and T.~Takesako,
+T.~Fujita, M.~Kawasaki, \me and T.~Takesako,
 %``A new algorithm for calculating the curvature perturbations in stochastic inflation,''
 JCAP \textbf{12}, 036 (2013).
 %doi:10.1088/1475-7516/2013/12/036
@@ -541,7 +618,7 @@ JCAP \textbf{12}, 036 (2013).
 
 %\cite{Fujita:2014tja}
 \bibitem{Fujita:2014tja}
-T.~Fujita, M.~Kawasaki and Y.~Tada,
+T.~Fujita, M.~Kawasaki and \me,
 %``Non-perturbative approach for curvature perturbations in stochastic $\delta N$ formalism,''
 JCAP \textbf{10}, 030 (2014).
 %doi:10.1088/1475-7516/2014/10/030
@@ -550,7 +627,7 @@ JCAP \textbf{10}, 030 (2014).
 
 %\cite{Kawasaki:2015ppx}
 \bibitem{Kawasaki:2015ppx}
-M.~Kawasaki and Y.~Tada,
+M.~Kawasaki and \me,
 %``Can massive primordial black holes be produced in mild waterfall hybrid inflation?,''
 JCAP \textbf{08}, 041 (2016).
 %doi:10.1088/1475-7516/2016/08/041
@@ -559,7 +636,7 @@ JCAP \textbf{08}, 041 (2016).
 
 %\cite{Pinol:2018euk}
 \bibitem{Pinol:2018euk}
-L.~Pinol, S.~Renaux-Petel and Y.~Tada,
+L.~Pinol, S.~Renaux-Petel and \me,
 %``Inflationary stochastic anomalies,''
 Class. Quant. Grav. \textbf{36}, no.7, 07LT01 (2019).
 %doi:10.1088/1361-6382/ab097f
@@ -568,7 +645,7 @@ Class. Quant. Grav. \textbf{36}, no.7, 07LT01 (2019).
 
 %\cite{Pinol:2020cdp}
 \bibitem{Pinol:2020cdp}
-L.~Pinol, S.~Renaux-Petel and Y.~Tada,
+L.~Pinol, S.~Renaux-Petel and \me,
 %``A manifestly covariant theory of multifield stochastic inflation in phase space,''
 [arXiv:2008.07497 [astro-ph.CO]].
 %5 citations counted in INSPIRE as of 29 Oct 2020
@@ -576,7 +653,7 @@ L.~Pinol, S.~Renaux-Petel and Y.~Tada,
 
 %\cite{Kawasaki:2016pql}
 \bibitem{Kawasaki:2016pql}
-M.~Kawasaki, A.~Kusenko, Y.~Tada and T.~T.~Yanagida,
+M.~Kawasaki, A.~Kusenko, \me and T.~T.~Yanagida,
 %``Primordial black holes as dark matter in supergravity inflation models,''
 Phys. Rev. D \textbf{94}, no.8, 083523 (2016).
 %doi:10.1103/PhysRevD.94.083523
@@ -585,7 +662,7 @@ Phys. Rev. D \textbf{94}, no.8, 083523 (2016).
 
 %\cite{Inomata:2016rbd}
 \bibitem{Inomata:2016rbd}
-K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida,
+K.~Inomata, M.~Kawasaki, K.~Mukaida, \me and T.~T.~Yanagida,
 %``Inflationary primordial black holes for the LIGO gravitational wave events and pulsar timing array experiments,''
 Phys. Rev. D \textbf{95}, no.12, 123510 (2017).
 %doi:10.1103/PhysRevD.95.123510
@@ -594,7 +671,7 @@ Phys. Rev. D \textbf{95}, no.12, 123510 (2017).
 
 %\cite{Inomata:2017okj}
 \bibitem{Inomata:2017okj}
-K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida,
+K.~Inomata, M.~Kawasaki, K.~Mukaida, \me and T.~T.~Yanagida,
 %``Inflationary Primordial Black Holes as All Dark Matter,''
 Phys. Rev. D \textbf{96}, no.4, 043504 (2017).
 %doi:10.1103/PhysRevD.96.043504
@@ -603,12 +680,63 @@ Phys. Rev. D \textbf{96}, no.4, 043504 (2017).
 
 %\cite{Inomata:2017uaw}
 \bibitem{Inomata:2017uaw}
-K.~Inomata, M.~Kawasaki, K.~Mukaida, Y.~Tada and T.~T.~Yanagida,
+K.~Inomata, M.~Kawasaki, K.~Mukaida, \me and T.~T.~Yanagida,
 %``$\mathcal O(10) M_\odot$ primordial black holes and string axion dark matter,''
 Phys. Rev. D \textbf{96}, no.12, 123527 (2017).
 %doi:10.1103/PhysRevD.96.123527
 %[arXiv:1709.07865 [astro-ph.CO]].
 %7 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Kogai:2020jkq}
+\bibitem{Kogai:2020jkq}
+K.~Kogai and \me,
+%``Escape from the swampland with a spectator field,''
+Phys. Rev. D \textbf{101}, no.10, 103514 (2020)
+doi:10.1103/PhysRevD.101.103514
+[arXiv:2003.06753 [astro-ph.CO]].
+%0 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Niikura:2019kqi}
+\bibitem{Niikura:2019kqi}
+H.~Niikura, M.~Takada, S.~Yokoyama, T.~Sumi and S.~Masaki,
+%``Constraints on Earth-mass primordial black holes from OGLE 5-year microlensing events,''
+Phys. Rev. D \textbf{99}, no.8, 083503 (2019).
+%doi:10.1103/PhysRevD.99.083503
+%[arXiv:1901.07120 [astro-ph.CO]].
+%64 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Tada:2019amh}
+\bibitem{Tada:2019amh}
+\me and S.~Yokoyama,
+%``Primordial black hole tower: Dark matter, earth-mass, and LIGO black holes,''
+Phys. Rev. D \textbf{100}, no.2, 023537 (2019).
+%doi:10.1103/PhysRevD.100.023537
+%[arXiv:1904.10298 [astro-ph.CO]].
+%19 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Tada:2015noa}
+\bibitem{Tada:2015noa}
+\me and S.~Yokoyama,
+%``Primordial black holes as biased tracers,''
+Phys. Rev. D \textbf{91}, no.12, 123534 (2015).
+%doi:10.1103/PhysRevD.91.123534
+%[arXiv:1502.01124 [astro-ph.CO]].
+%48 citations counted in INSPIRE as of 29 Oct 2020
+
+
+%\cite{Mikura:2020qhc}
+\bibitem{Mikura:2020qhc}
+Y.~Mikura, \me and S.~Yokoyama,
+%``Conformal inflation in the metric-affine geometry,''
+[arXiv:2008.00628 [hep-th]].
+%1 citations counted in INSPIRE as of 29 Oct 2020
+
+%\cite{Abe:2020sqb}
+\bibitem{Abe:2020sqb}
+K.~T.~Abe, \me and I.~Ueda,
+%``Induced gravitational waves as a cosmological probe of the sound speed during the QCD phase transition,''
+[arXiv:2010.06193 [astro-ph.CO]].
+%0 citations counted in INSPIRE as of 29 Oct 2020
 
 \end{thebibliography}
 
