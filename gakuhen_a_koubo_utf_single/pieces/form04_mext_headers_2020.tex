@@ -1,0 +1,144 @@
+%form04_mext_headers_2020
+%%\setlength{\oddsidemargin}{-18pt}
+%%\setlength{\evensidemargin}{-18pt}
+%%\setlength{\textwidth}{486pt}
+%%
+\newcommand{\mextPageUnderline}{\underline}	
+% shingaku_field has no underline under the page #, but others do.  Sigh...
+% This will be redefined in form04_shingaku_field_header.tex.	2017-09-03 Taku
+
+\newcommand{\mextPageLF}{}
+% page # for shingaku_keikaku is at the bottom of the header.
+% page # for shingaku_koubo is one line above the header bottom.
+
+% How come MEXT forms have no unified format??  It is a matter of sense of beauty...
+\fancypagestyle{mext-p1-sameline-header}{%
+	\fancyhf{}
+	\fancyhead[L]{\headerfont\textbf{\様式 (応募内容ファイル (添付ファイル項目))}}
+	\fancyhead[R]{\headerfont\textbf{\mextPageUnderline{\研究種目header−\KLJInt{\thepage}}}}
+}
+
+\fancypagestyle{mext-p1-offset-header}{%
+	\fancyhf{}
+	\fancyhead[L]{\headerfont\textbf{\様式 (応募内容ファイル (添付ファイル項目))}\\
+			\rule{0pt}{0pt}\mextPageLF}
+	\fancyhead[R]{\headerfont\textbf{\mextPageUnderline{\研究種目header−\KLJInt{\thepage}}}\mextPageLF}
+}
+
+\fancypagestyle{mext-p1-offset2-header}{%
+	\fancyhf{}
+	\fancyhead[L]{\headerfont\textbf{\様式 (応募内容ファイル (添付ファイル項目))}\\
+			\rule{0pt}{15pt}\\\mextPageLF}
+	\fancyhead[R]{\headerfont\textbf{\mextPageUnderline{\研究種目header−\KLJInt{\thepage}}}\mextPageLF}
+}
+
+\newcommand{\MEXTVeryFirstPageStyle}[5]{%
+%	Defines the header for the very first page of the form.
+%	Called from \KLShumokuFirstPageStyle in form04_***.
+%--------------------------------
+%	#1: page style name
+%	#2: 様式 研究計画調書 （＊＊）
+%	#3: 研究種目名
+%	#4: 項目名
+%	#5: sectionNo
+%--------------------------------
+	\fancypagestyle{JSPSVeryFirstPageStyle}{% The name is not taken from #1, because 
+		\fancyhf{}
+		\fancyhead[L]{\hspace{-37pt}\headerfont#2\ （添付ファイル項目）\\
+				\rule{0pt}{18pt}\\}
+%				\rule{0pt}{0pt}\\}
+		\fancyhead[R]{\headerfont\textbf{#3\ \KLJInt{\thepage}}\vspace{-5pt}\\
+			\rule{0pt}{0pt}\\}
+%		\fancyhead[R]{\headerfont\textbf{#3\ \KLJInt{\thepage}\\}}
+	}
+	\thispagestyle{JSPSVeryFirstPageStyle}
+}
+
+
+
+\newcommand{\MEXTFieldVeryFirstHeaderWithSectionNo}[5]{%
+%	Defines the the very first header for MEXT shingaku_field form in form XXXX-N-n.
+%--------------------------------
+%	#1: page style name
+%	#2: 様式
+%	#3: 研究種目名
+%	#4: 項目名
+%	#5: sectionNo
+%--------------------------------
+	\fancypagestyle{MEXTFieldVeryFirstHeaderWithSectionNo}{%
+		\fancyhf{}
+		\fancyhead[L]{\headerfont\textbf{#2（「領域計画書」応募内容ファイル（添付ファイル項目））}\\
+				\rule{0pt}{18pt}\\}
+		\fancyhead[R]{\headerfont\textbf{\mextPageUnderline{#3−\KLJInt{#5}−\KLJInt{\thepage}}}\mextPageLF}
+	}
+	\thispagestyle{MEXTFieldVeryFirstHeaderWithSectionNo}
+}
+
+\newcommand{\MEXTDefaultHeaderWithSectionNo}[5]{%
+%	Defines the default header for MEXT forms in form XXXX-N-n.
+%--------------------------------
+%	#1: page style name
+%	#2: 様式
+%	#3: 研究種目名
+%	#4: 項目名
+%	#5: sectionNo
+%--------------------------------
+	\fancypagestyle{MEXTDefaultHeaderWithSectionNo}{%
+		\fancyhf{}
+		\fancyhead[R]{\headerfont\textbf{\mextPageUnderline{#3−\KLJInt{#5}−\KLJInt{\thepage}}}\mextPageLF}
+	}
+	\pagestyle{MEXTDefaultHeaderWithSectionNo}
+}
+
+\newcommand{\MEXTDefaultHeaderWithParenthesis}[5]{%
+%	Defines the default header for MEXT forms in form XXXX-N-(n).
+%--------------------------------
+%	#1: page style name
+%	#2: 様式
+%	#3: 研究種目名
+%	#4: 項目名
+%	#5: sectionNo
+%--------------------------------
+	\fancypagestyle{MEXTDefaultHeaderWithParenthesis}{%
+		\fancyhf{}
+		\fancyhead[R]{\headerfont\textbf{\mextPageUnderline{#3\KLJInt{#5}−（\KLJInt{\thepage}）}}\mextPageLF}
+	}
+	\pagestyle{MEXTDefaultHeaderWithParenthesis}
+}
+
+\newcommand{\MEXTDefaultHeader}[5]{%
+%	Defines the default header for MEXT forms in form XXXX-n.
+%--------------------------------
+%	#1: page style name
+%	#2: 様式
+%	#3: 研究種目名
+%	#4: 項目名
+%	#5: sectionNo
+%--------------------------------
+	\fancypagestyle{MEXTDefaultHeader}{%
+		\fancyhf{}
+		\fancyhead[R]{\headerfont\textbf{\mextPageUnderline{#3−\KLJInt{\thepage}}}\mextPageLF}
+	}
+	\pagestyle{MEXTDefaultHeader}
+}
+
+%%\newcommand{\MEXTDefaultPageStyle}[5]{%
+%%%	Defines the default header for the subject.
+%%%	Called from \KLShumokuDefaultPageStyle in form04_***.
+%%%--------------------------------
+%%%	#1: page style name
+%%%	#2: 様式
+%%%	#3: 研究種目名
+%%%	#4: 項目名
+%%%	#5: sectionNo
+%%%--------------------------------
+%%	\fancypagestyle{JSPSDefaultPageStyle}{%
+%%		\fancyhf{}
+%%		\fancyhead[L]{\headerfont\textbf{　　【#4（つづき）\ 】}\vspace{-7pt}\\}
+%%		\fancyhead[R]{\headerfont\textbf{#3\ \KLJInt{\thepage}}\vspace{-5pt}\\
+%%			\rule{0pt}{0pt}\\}
+%%%		\fancyhead[R]{\headerfont\textbf{#3\ \KLJInt{\thepage}\\}}	
+%%        }
+%%        \pagestyle{JSPSDefaultPageStyle}
+%%}
+%%
