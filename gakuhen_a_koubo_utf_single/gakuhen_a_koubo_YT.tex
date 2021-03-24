@@ -127,6 +127,9 @@
 \makeatother
 
 
+\setulminsep{1.2ex}{0.8ex}
+
+
 % ===== 欄外メモ ==================
 \newcommand{\memo}[1]{\marginpar{#1}}
 %\renewcommand{\memo}[1]{}	% 全てのメモを表示させないようにするには、行頭の"%"を消す
@@ -174,24 +177,24 @@
 ダークマターは存在が確実視されているものの, その正体は未だ解明されていない.
 これまでその候補として WIMP (Weakly Interacting Massive Particle) が注目されてきたが, 様々な観測および実験から制限が厳しくなっているのが現状である.
 そこで本領域研究では WIMP に捉われない, 多角的なダークマター探索を目的としている.
-その中の1つが原始ブラックホール (Primordial Black Hole: PBH) に代表される巨視的ダークマターであり,
+その中の1つが\emph{原始ブラックホール (Primordial Black Hole: PBH)} に代表される巨視的ダークマターであり,
 本公募研究においてもダークマターとしての PBH を主対象とする.
 
-そもそも宇宙における銀河などの豊かな構造はインフレーションと呼ばれる初期宇宙の加速膨張期に作られた空間曲率のゆらぎ ($\zeta$ と書かれる) をもとにしていると考えられている.
+そもそも宇宙における銀河などの豊かな構造は, インフレーションと呼ばれる宇宙初期の加速膨張期に作られた空間曲率のゆらぎ ($\zeta$ と書かれる) をもとにしていると考えられている.
 この曲率ゆらぎは大規模 ($\gtrsim1\,\mathrm{Mpc}$) では非常に小さい ($\zeta\sim10^{-5}$) ことが宇宙マイクロ波背景放射 (Cosmic Microwave Background: CMB) の観測などから知られているが~\cite{Aghanim:2018eyx},
 小規模でも小さいかどうかはわかっていない.
-もし小規模では大きな曲率ゆらぎがありふれていて, $\zeta\sim1$ となるような領域が無視できない確率で生じたとすると, その領域は初期宇宙の放射優勢期時代に星を介さず直接ブラックホールまで重力崩壊することが予想されており,
+もし小規模では大きな曲率ゆらぎがありふれていて, $\zeta\sim1$ となるような領域が無視できない確率で生じたとすると, その領域は宇宙初期の放射優勢期に星を介さず直接ブラックホールまで重力崩壊することが予想されており,
 このようなブラックホールを PBH と呼ぶ~\cite{Carr:1974nx}.
 通常のブラックホールは重い星の超新星爆発から生じるため典型的に太陽質量 $M_\odot$ 程度にしかならないのに対し,
 PBH は星を介さないためほぼ任意の質量で実現できることが大きな特徴である.
-例えば非常に重い PBH $\gtrsim10^4M_\odot$ は各銀河中心に存在する (そして近年 Event Horizon Telescope で撮像に成功した) 超大質量ブラックホールの種天体の候補の1つであるし~[\Blue{REF}],
-LIGO/Virgo で合体重力波を通して観測されているやや重いブラックホール $\sim10M_\odot$ も PBH である可能性が指摘されている~[\Blue{REF}].
+例えば非常に重い PBH ($\gtrsim10^4M_\odot$) は各銀河中心に存在する (そして近年 Event Horizon Telescope で撮像に成功した) 超大質量ブラックホールの種天体の候補の1つであるし~\cite{Carr:2018rid},
+LIGO/Virgo で合体重力波を通して観測されたやや重いブラックホール ($\sim10M_\odot$) も PBH である可能性が指摘されている~\cite{Sasaki:2018dmp}.
 
-そしてブラックホールは基本的に重力的にしか相互作用しないため, 十分な PBH 量があればダークマターとしても振る舞うことができる.
-現在までに様々な質量の PBH に対し様々な観測的制限がかけられてきたが, $\sim(10^{-15}\text{--}10^{-11})M_\odot$ 程度の小惑星のように軽い PBH に対しては確かな制限はかかっておらず, ダークマターの主成分になり得るため注目されている~[\Blue{REF}].
-しかしそれは逆に言えば, このような PBH がダークマターの主成分であったとしても現状それを観測的に確かめる手段はまだないことを意味する.
+ブラックホールは基本的に重力的にしか相互作用しないため, 十分な PBH 量があればダークマターとしても振る舞うことができる.
+現在までに様々な質量の PBH に対し多様な観測的制限がかけられてきたが, $\sim(10^{-15}\text{--}10^{-11})M_\odot$ 程度の小惑星のように軽い PBH に対しては確かな制限はかかっておらず, ダークマターの主成分になり得るため注目されている~\cite{Carr:2016drx}.
+しかしそれは逆に言えば, \ul{このような PBH がダークマターの主成分であったとしてもそれを観測的に確かめる手段は未だ確立されていない}ことを意味する.
 本領域研究でも様々な観測手段によって PBH を捉える研究が行われるが,
-本公募研究でも「小惑星型 PBH がダークマターであるときそれを検証する手段はあるか？」という問いを核心に据える.
+本公募研究でも\emph{「小惑星型 PBH がダークマターであるときそれを検証する手段はあるか？」}という問いを核心に据える.
 
 
 
@@ -208,21 +211,21 @@ LIGO/Virgo で合体重力波を通して観測されているやや重いブラ
 
 \noindent
 小惑星型 PBH に限らず多くの質量帯において PBH の相補的根拠として期待されているのが重力波である.
-PBH を作るほど大きな曲率ゆらぎがありふれていた場合, PBH ができなかった領域 ($\zeta\sim10^{-2}$程度) でも曲率ゆらぎどうしの相互作用から十分な大きさの背景重力波が誘導されることが指摘されている~[\Blue{REF}].
-誘導重力波の周波数は曲率ゆらぎの相関長, そして生成される PBH 質量と対応しており, 
-例えば LIGO/Virgo 重力波に関係する $\calO(10)M_\odot$ PBH に対応する周波数は $\sim1\mathrm{nHz}$ 程度であり,
+PBH を作るほど大きな曲率ゆらぎがありふれていた場合, PBH ができなかった領域 ($\zeta\sim10^{-2}$程度) でも曲率ゆらぎどうしの相互作用から十分な大きさの\emph{背景重力波が誘導}されることが指摘されている~\cite{Saito:2008jc}.
+誘導重力波の周波数は曲率ゆらぎの相関長, すなわち生成される PBH 質量と対応しており, 
+例えば LIGO/Virgo 重力波に関係する $\calO(10)M_\odot$ PBH に対応する周波数は $\sim1\mathrm{nHz}$ 程度で,
 パルサーの同期観測 (Pulsar Timing Array: PTA) によって測定することができる.
-近年 PTA 観測の1つである NANOGrav グループが実際に背景重力波を観測した可能性を報告し~[\Blue{REF}],
+近年 PTA 観測の1つである NANOGrav グループが実際に背景重力波を観測した可能性を報告し~\cite{Arzoumanian:2020vkk},
 PBH に対応する誘導重力波の現実的な観測可能性が高まっている.
 
 小惑星型 PBH に対応する周波数は $\sim1\mathrm{mHz}$ 程度であり,
-ちょうど LISA や DECIGO に代表される衛星型重力波望遠鏡の周波数帯である.
-すなわち小惑星型 PBH がダークマターであった場合 LISA や DECIGO で誘導重力波が観測されることが期待され, 
+ちょうど LISA や DECIGO 計画に代表される衛星型重力波望遠鏡の周波数帯である.
+すなわち\ul{小惑星型 PBH がダークマターであった場合 LISA や DECIGO で誘導重力波が観測される}ことが期待され, 
 小惑星型 PBH ダークマターの観測的根拠となり得る.
 このような学術背景から今こそ PBH と誘導重力波の関係を精査する必要があると言える.
 
 PBH 量と誘導重力波量を正確に対応づけるためには, その両方のもととなる曲率ゆらぎの統計的性質との対応を精査しなければならない.
-これまで曲率ゆらぎは基本的にガウス分布に従うと仮定され, 非ガウス性の補正は級数展開によってしばしば取り入れられてきた~[\Blue{REF}].
+これまで曲率ゆらぎは基本的にガウス分布に従うと仮定され, 非ガウス性の補正は級数展開によってしばしば取り入れられてきた~\cite{Byrnes:2012yx}.
 例えば曲率ゆらぎ $\zeta$ はガウス場 $g$ を用い, 以下のような展開によって近似される.
 \bae{\label{eq: fNL expansion}
 	\zeta(\bfx)=g(\bfx)+\frac{3}{5}\fNL g^2(\bfx)+\cdots.
@@ -230,12 +233,12 @@ PBH 量と誘導重力波量を正確に対応づけるためには, その両�
 展開係数 $\fNL$ は非線形パラメータと呼ばれ, 数値因子 $3/5$ は慣習である.
 誘導重力波に対し重要になる曲率ゆらぎの大きさは $\zeta\sim10^{-2}$, すなわち $g\sim10^{-2}$ 程度であり, $1$より十分小さいのでこのような展開近似は正当化される.
 しかしながら PBH には $\zeta\sim1$ のゆらぎが必要であり, このような領域に対し上記の展開は全く適当ではない.
-実際具体的なインフレーション模型において曲率ゆらぎは大きい部分でガウス分布 ($\propto\exp(-\zeta^2)$) ではなく
-指数関数 ($\propto\exp(-\zeta)$) でしか減衰しない可能性が指摘されている~[\Blue{REF}].
+実際具体的なインフレーション理論において\ul{曲率ゆらぎは大きい部分でガウス分布 ({$\propto\exp(-\zeta^2)$}) ではなく
+指数関数 ({$\propto\exp(-\zeta)$}) でしか減衰しない}可能性が指摘されている~\cite{Ezquiaga:2019ftu}.
 さらに仮に曲率ゆらぎの統計が正確に指定されたとしても, そこから PBH 量を見積もる段階では Press-Schechter と呼ばれる簡単化された統計手法が使われることが多かった.
 Press-Schechter 法では空間的に粗視化した曲率ゆらぎが, ある閾値を超えるか否かのみで PBH 形成が判定されるが,
 実際の PBH 形成は曲率ゆらぎの配位形にも依存するため, 本来は配位形を決める特徴量も全て統計的に扱わなければならない.
-これらを踏まえ本公募研究では「任意の曲率ゆらぎ統計に対し Press-Schechter を超えた正確な統計処理により PBH 量を見積もる」ことを目的とする.
+これらを踏まえ本公募研究では\emph{「任意の曲率ゆらぎ統計に対し Press-Schechter を超えた正確な統計処理により PBH 量を見積もる」}ことを目的とする.
 
 
 \begin{mdframed}[roundcorner=0.5zw,
@@ -249,28 +252,28 @@ Press-Schechter 法では空間的に粗視化した曲率ゆらぎが, ある�
 \end{mdframed}
 
 \noindent
-Press-Schechter 法を超えた PBH 量の見積もりとして, 近年本領域研究の A03 理論班研究代表者である柳哲文氏 (名古屋大講師) らにより,
-乱数場の平均値周りの統計ではなく「極端に大きな値」の統計を扱う「ピーク理論」を PBH に応用した研究が発表された~[\Blue{REF}].
+Press-Schechter 法を超えた PBH 量の見積もりとして, 近年本領域研究の A03 理論班研究代表者である\emph{柳哲文氏 (名古屋大講師)} らにより,
+乱数場の平均値周りの統計ではなく「極端に大きな値」の統計を扱う\emph{ピーク理論}を PBH に応用した研究が発表された~\cite{Yoo:2018kvb}.
 ピーク理論によれば極端に大きな値 (ピーク) の配位形は球対称に近くなり, 「値の大きさ」と「配位の相関長」の2変数のみで記述できることがわかる.
 これら2変数の確率分布はもとの曲率ゆらぎの統計性から決定される.
-一方球対称配位での PBH 形成条件は解析的にも数値的にもよく研究され, 「圧縮率」という特徴量で良く判定できることが知られている.
+一方球対称配位での PBH 形成条件は解析的にも数値的にも研究され, 「圧縮率」という特徴量で良く判定できることが知られている.
 したがって「圧縮率」を「値の大きさ」と「配位の相関長」の2変数関数として与えておけば, 
 PBH 形成確率を正確に議論することができるということが明らかにされた.
 
 本論文ではまずもとの曲率ゆらぎがガウス場で, かつ特定の相関長しか持たない場合 (単色スペクトルと呼ぶ) についてのみ議論された.
-続いて横山修一郎氏 (名古屋大助教) らとともに, 非ガウス補正として \eqref{eq: fNL expansion}~式の2次項 ($\fNL$) を加え (しかし単色スペクトルのまま) 議論が拡張された~[\Blue{REF}].
-それとは独立に, ガウス場のまましかし任意スペクトルに対しての拡張も行われている~[\Blue{REF}].
-そこで現在申請者は柳・横山両氏の協力のもと, 両研究を統合し「任意スペクトルかつ $\fNL$ 補正まで入った PBH ピーク理論の構築」を議論し始めている.
-この研究の完成が第一の研究計画である.
+続いて\emph{横山修一郎氏 (名古屋大助教)} らとともに, 非ガウス補正として \eqref{eq: fNL expansion}~式の2次項 ($\fNL$) を加え (しかし単色スペクトルのまま) 議論が拡張された~\cite{Yoo:2019pma}.
+それとは独立に柳氏らにより, ガウス場のまましかし任意スペクトルに対しての拡張も行われている~\cite{Yoo:2020dkz}.
+そこで現在申請者は柳・横山両氏, さらに\emph{北嶋直弥 (東北大助教)} の協力のもと, 両研究を統合し\emph{\boldmath「任意スペクトルかつ $\fNL$ 補正まで入った PBH ピーク理論の構築」}を議論し始めている.
+この研究の完成が\ul{第一の研究計画}である.
 
 一方上述した通り PBH 形成を左右するような大きな曲率ゆらぎに対し $\fNL$ 級数展開は正当化されない.
-実際具体的なインフレーション模型では大きな曲率ゆらぎの統計性はガウス分布から著しくずれる可能性がある.
-そこで第二の研究計画は「任意スペクトルかつ実際のインフレーション模型に示唆される非ガウス分布に対する PBH ピーク理論の構築」とする.
-ここで「インフレーション模型に示唆される曲率ゆらぎの統計性」は実は申請者がこれまで研究してきた「インフレーションの確率形式」と呼ばれる解析手法 (3 応募者の研究遂行能力及び研究環境も参照) で計算されることに触れておく.
+実際具体的なインフレーション理論において大きな曲率ゆらぎの統計性はガウス分布から著しくずれる可能性がある.
+そこで\ul{第二の研究計画}は\emph{「任意スペクトルかつ実際のインフレーション理論に示唆される非ガウス分布に対する PBH ピーク理論の構築」}とする.
+ここで「インフレーション理論に示唆される曲率ゆらぎの統計性」は実は申請者がこれまで研究してきた「インフレーションの確率形式」と呼ばれる解析手法 (3 応募者の研究遂行能力及び研究環境も参照) で計算されることに触れておく.
 したがって申請者は具体的な曲率ゆらぎの統計性の導出にも精通しており, この具体形を参考に PBH ピーク理論を構築する.
 ガウス分布を仮定しない場合, ピークの「値の大きさ」と「配位の相関長」の確率分布は解析的には解けないかもしれないが,
 少なくとも数値的には解けることが期待される.
-これらを解析的あるいは数値的に解くため計算機ソフトウェア \textsc{Mathematica} を利用し,
+これらの解析的あるいは数値的研究に計算機ソフトウェア \textsc{Mathematica} を利用するため,
 その費用が本研究費の使途の1つである.
 
 
@@ -288,12 +291,12 @@ PBH 形成確率を正確に議論することができるということが明�
 
 \noindent
 本領域研究ではダークマターの探索を目的としており, 3つの大きな目標のうちの1つが PBH に代表される巨視的ダークマターである.
-これまで申請者は PBH ダークマターを実現するインフレーション模型の提唱などの観点から貢献してきたが (3 応募者の研究遂行能力及び研究環境も参照),
+これまで申請者は PBH ダークマターを実現するインフレーション理論の提唱などの観点から貢献してきたが (3 応募者の研究遂行能力及び研究環境も参照),
 PBH がダークマターであることを裏付けるためには相補的な観測根拠が不可欠である.
 誘導重力波はその有力な候補の1つであり, 様々な重力波観測計画が実現しようとしている現在において,
 重力波量と PBH 量を正確に対応づける研究は必須である.
 この研究を通じ, もし重力波が観測されて PBH の存在量と質量が正確に判明すれば, 
-本領域研究でも計画されている重力レンズや蒸発光などの様々な観測的検証の助けになり,
+他の様々な観測的検証 (本領域研究でも計画されている重力レンズや蒸発光など) の助けになり,
 逆にこれらの観測で先に PBH が発見され, 対応する誘導重力波量が予想されれば, 重力波観測計画の促進につながるであろう.
 
 これらが本公募研究の当該研究領域の推進への貢献であり, 以上が具体的な研究目的および研究方法である.
@@ -323,6 +326,98 @@ B.~J.~Carr and S.~W.~Hawking,
 Mon. Not. Roy. Astron. Soc. \textbf{168}, 399-415 (1974)
 %818 citations counted in INSPIRE as of 23 Mar 2021
 
+%\cite{Carr:2018rid}
+\bibitem{Carr:2018rid}
+B.~Carr and J.~Silk,
+%``Primordial Black Holes as Generators of Cosmic Structures,''
+Mon. Not. Roy. Astron. Soc. \textbf{478}, no.3, 3756-3775 (2018)
+%doi:10.1093/mnras/sty1204
+[arXiv:1801.00672 [astro-ph.CO]].
+%89 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Sasaki:2018dmp}
+\bibitem{Sasaki:2018dmp}
+M.~Sasaki, T.~Suyama, T.~Tanaka and S.~Yokoyama,
+%``Primordial black holes\textemdash{}perspectives in gravitational wave astronomy,''
+Class. Quant. Grav. \textbf{35}, no.6, 063001 (2018)
+%doi:10.1088/1361-6382/aaa7b4
+[arXiv:1801.05235 [astro-ph.CO]].
+%284 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Carr:2016drx}
+\bibitem{Carr:2016drx}
+B.~Carr, F.~Kuhnel and M.~Sandstad,
+%``Primordial Black Holes as Dark Matter,''
+Phys. Rev. D \textbf{94}, no.8, 083504 (2016)
+%doi:10.1103/PhysRevD.94.083504
+[arXiv:1607.06077 [astro-ph.CO]].
+%599 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Saito:2008jc}
+\bibitem{Saito:2008jc}
+R.~Saito and J.~Yokoyama,
+%``Gravitational wave background as a probe of the primordial black hole abundance,''
+Phys. Rev. Lett. \textbf{102}, 161101 (2009)
+[erratum: Phys. Rev. Lett. \textbf{107}, 069901 (2011)]
+%doi:10.1103/PhysRevLett.102.161101
+[arXiv:0812.4339 [astro-ph]].
+%156 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Arzoumanian:2020vkk}
+\bibitem{Arzoumanian:2020vkk}
+Z.~Arzoumanian \textit{et al.} [NANOGrav],
+%``The NANOGrav 12.5 yr Data Set: Search for an Isotropic Stochastic Gravitational-wave Background,''
+Astrophys. J. Lett. \textbf{905}, no.2, L34 (2020)
+%doi:10.3847/2041-8213/abd401
+[arXiv:2009.04496 [astro-ph.HE]].
+%104 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Byrnes:2012yx}
+\bibitem{Byrnes:2012yx}
+C.~T.~Byrnes, E.~J.~Copeland and A.~M.~Green,
+%``Primordial black holes as a tool for constraining non-Gaussianity,''
+Phys. Rev. D \textbf{86}, 043512 (2012)
+%doi:10.1103/PhysRevD.86.043512
+[arXiv:1206.4188 [astro-ph.CO]].
+%89 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Ezquiaga:2019ftu}
+\bibitem{Ezquiaga:2019ftu}
+J.~M.~Ezquiaga, J.~Garc\'\i{}a-Bellido and V.~Vennin,
+%``The exponential tail of inflationary fluctuations: consequences for primordial black holes,''
+JCAP \textbf{03}, 029 (2020)
+%doi:10.1088/1475-7516/2020/03/029
+[arXiv:1912.05399 [astro-ph.CO]].
+%25 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Yoo:2018kvb}
+\bibitem{Yoo:2018kvb}
+C.~M.~Yoo, T.~Harada, J.~Garriga and K.~Kohri,
+%``Primordial black hole abundance from random Gaussian curvature perturbations and a local density threshold,''
+PTEP \textbf{2018}, no.12, 123E01 (2018)
+%doi:10.1093/ptep/pty120
+[arXiv:1805.03946 [astro-ph.CO]].
+%75 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Yoo:2019pma}
+\bibitem{Yoo:2019pma}
+C.~M.~Yoo, J.~O.~Gong and S.~Yokoyama,
+%``Abundance of primordial black holes with local non-Gaussianity in peak theory,''
+JCAP \textbf{09}, 033 (2019)
+%doi:10.1088/1475-7516/2019/09/033
+[arXiv:1906.06790 [astro-ph.CO]].
+%23 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Yoo:2020dkz}
+\bibitem{Yoo:2020dkz}
+C.~M.~Yoo, T.~Harada, S.~Hirano and K.~Kohri,
+%``Abundance of Primordial Black Holes in Peak Theory for an Arbitrary Power Spectrum,''
+PTEP \textbf{2021}, no.1, 013E02 (2021)
+%doi:10.1093/ptep/ptaa155
+[arXiv:2008.02425 [astro-ph.CO]].
+%9 citations counted in INSPIRE as of 24 Mar 2021
+
+
 \end{thebibliography}
 
 %end 研究目的と研究計画	＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
@@ -337,6 +432,100 @@ Mon. Not. Roy. Astron. Soc. \textbf{168}, 399-415 (1974)
 
 %s03_background
 %begin 本研究の着想に至った経緯など ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+
+\begin{mdframed}[roundcorner=0.5zw,
+	%skipabove=1zw,skipbelow=1zw,
+	innertopmargin=0.8zw,innerbottommargin=0.8zw,
+	%innerleftmargin=0.8zw,innerrightmargin=0.8zw,
+	%rightmargin=5000pt,leftmargin=50pt,
+	linecolor=black!50,linewidth=0.2zw,
+	backgroundcolor=black!10]
+	{\bfseries\gtfamily\sffamily\large 1. 着想に至った経緯と準備状況}
+\end{mdframed}
+
+\noindent
+PBH 形成は一般相対論の非線形効果によって起こるため, その判定は難しい.
+近年になるまでは「PBH を実現できるか否か」のみが主に注目され, PBH 量自体はインフレーション理論のパラメータを少し変え, 曲率ゆらぎの統計性をわずかに変化させるだけでいくらでも調整できるため,
+あまり正確に議論されては来なかった.
+しかし PBH 形成に誘導重力波が伴うこと, そして重力波観測が現実味を帯びてきた現状を踏まえ, PBH の相補的根拠として誘導重力波を用いることが真剣に捉えられるようになってきた.
+誘導重力波を PBH の相補的根拠とするには, もととなる曲率ゆらぎの統計性を固定し, PBH と誘導重力波双方の生成量を正確に見積もらなければならない.
+したがって \ul{PBH 量の正確な議論の需要}が高まっているのが現状である.
+
+一方ブラックホール形成の解析的および数値的研究の進歩により, 様々なピーク配位に対する PBH 形成判定が議論できるようになってきた.
+さらに申請者がこれまで推し進めてきた「インフレーションの確率形式」の発展により, インフレーションによって作られる曲率ゆらぎに対し, ピーク付近での統計性が計算できるようになってきている.
+すなわち \ul{PBH 量の正確な議論の供給}も可能になっていると言える.
+
+申請者はこれまでインフレーションの確率形式の研究を通じ, 曲率ゆらぎのピーク付近の統計がガウス分布からずれ得ることを知り,
+また自身の論文 (3-[\ref{ref: PBH tower}, \ref{ref: PBH bias}]) でも議論したように, 曲率ゆらぎの非ガウス性や PBH 形成判定条件が PBH 量に大きな影響を与えることを考察してきた.
+このような経験と, 上述した PBH 量の正確な議論の需要と供給の一致が本研究計画の着想に至った経緯である.
+
+準備状況としては 1-3 で触れた通り現在, 柳, 横山, 北嶋氏の協力のもと「任意スペクトルかつ $\fNL$ 補正まで入った PBH ピーク理論の構築」を進めている.
+理論のアルゴリズム自体の構築には成功しており, 様々なスペクトル形に対し具体的な計算を行なっている最中である.
+また現状アルゴリズム自体は完成していてもその具体計算には複雑な数値計算が必要になっており, 今後の発展や多くの研究者にとっての利用しやすさのためにも,
+各段階における解析的整備を行えないか検討中である.
+
+
+\begin{mdframed}[roundcorner=0.5zw,
+	%skipabove=1zw,skipbelow=1zw,
+	innertopmargin=0.8zw,innerbottommargin=0.8zw,
+	%innerleftmargin=0.8zw,innerrightmargin=0.8zw,
+	%rightmargin=5000pt,leftmargin=50pt,
+	linecolor=black!50,linewidth=0.2zw,
+	backgroundcolor=black!10]
+	{\bfseries\gtfamily\sffamily\large 2. 本研究の世界的位置付け}
+\end{mdframed}
+
+\noindent
+PBH 形成判定条件の研究は柳氏らのグループに限らず現在世界的に注目されている (論文~\cite{Escriva:2019phb} 等).
+それら条件を用いて PBH 量を推定する統計手法も乱立している (論文~\cite{DeLuca:2020ioi,Young:2020xmk} 等).
+一方で曲率ゆらぎピークの統計がガウス分布から大きくずれ得ることも認知されてきている (論文~1-\cite{Ezquiaga:2019ftu}や\cite{Figueroa:2020jkf}).
+これらはまだそれぞれ独立した研究であり, したがって本研究は\ul{これらを1つにまとめ上げる}研究であると言える.
+PBH を観測的に立証するには誘導重力波の立ち位置は重く, 本研究はその理論的整備を行うだけでなく,
+他の PBH 直接観測計画や重力波観測計画の推進にも貢献するであろう.
+
+\bigskip
+
+\begin{thebibliography}{99}
+
+\scriptsize % フォントサイズを下げる
+\setlength{\itemsep}{-2pt} % 行間を縮める
+
+%\cite{Escriva:2019phb}
+\bibitem{Escriva:2019phb}
+A.~Escriv\`a, C.~Germani and R.~K.~Sheth,
+%``Universal threshold for primordial black hole formation,''
+Phys. Rev. D \textbf{101}, no.4, 044022 (2020)
+%doi:10.1103/PhysRevD.101.044022
+[arXiv:1907.13311 [gr-qc]].
+%49 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{DeLuca:2020ioi}
+\bibitem{DeLuca:2020ioi}
+V.~De Luca, G.~Franciolini and A.~Riotto,
+%``On the Primordial Black Hole Mass Function for Broad Spectra,''
+Phys. Lett. B \textbf{807}, 135550 (2020)
+%doi:10.1016/j.physletb.2020.135550
+[arXiv:2001.04371 [astro-ph.CO]].
+%15 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Young:2020xmk}
+\bibitem{Young:2020xmk}
+S.~Young and M.~Musso,
+%``Application of peaks theory to the abundance of primordial black holes,''
+JCAP \textbf{11}, 022 (2020)
+%doi:10.1088/1475-7516/2020/11/022
+[arXiv:2001.06469 [astro-ph.CO]].
+%8 citations counted in INSPIRE as of 24 Mar 2021
+
+%\cite{Figueroa:2020jkf}
+\bibitem{Figueroa:2020jkf}
+D.~G.~Figueroa, S.~Raatikainen, S.~Rasanen and E.~Tomberg,
+%``Non-Gaussian tail of the curvature perturbation in stochastic ultra-slow-roll inflation: implications for primordial black hole production,''
+[arXiv:2012.06551 [astro-ph.CO]].
+%1 citations counted in INSPIRE as of 24 Mar 2021
+
+\end{thebibliography}
+
 
 %end 本研究の着想に至った経緯など ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
 
@@ -486,16 +675,16 @@ Mon. Not. Roy. Astron. Soc. \textbf{168}, 399-415 (1974)
 申請者はこれまで\ul{原始ブラックホール (PBH)} と\ul{インフレーションの確率形式}について, 本研究課題に密接に関連した研究を重点的に行ってきた.
 PBH に関しては論文~[\ref{ref: PBH tower}, \ref{ref: O(10) PBH}--\ref{ref: PBH bias}] を発表,
 特に論文~[\ref{ref: PBH DM}, \ref{ref: PBH SUGRA}] ではダークマターとして, 論文~[\ref{ref: PBH LIGO}] では LIGO 重力波の波源として,
-そして論文~[\ref{ref: PBH tower}] ではそれらの観測的動機を同時に説明する天体としての PBH 形成を議論している.
-論文~[\ref{ref: PBH LIGO}] では誘導重力波が PBH の検証に重要であることを再指摘し, 論文~[\ref{ref: PBH tower}] では PBH 質量と観測的動機, 誘導重力波の周波数および
+そして論文~[\ref{ref: PBH tower}] ではそれら観測的動機を同時に説明する天体としての PBH 形成を議論している.
+論文~[\ref{ref: PBH LIGO}] では誘導重力波が PBH の検証に重要であることを再指摘し, 論文~[\ref{ref: PBH tower}] では PBH 質量と観測的動機, 誘導重力波の周波数, および
 対応する重力波観測計画を改めて明確にした.
 論文~[\ref{ref: GW QCD}] ではさらに誘導重力波を宇宙の量子色力学相転移の検証への応用を議論している.
 
-一方, 乱数を扱う数学である確率形式をインフレーションに応用し, 曲率ゆらぎを非摂動的に計算する手法を提唱~[\ref{ref: stochastic hybrid}, \ref{ref: stochastic-dN}], 
-PBH を実現するような大きなゆらぎも扱える可能性も提示した.
-論文~[\ref{ref: PBH hybrid}] では実際に特定のインフレーション模型で確率形式を用い PBH 形成を議論した.
-フランスでは本確率形式をインフレーション模型の一般形に適用できるよう, インフレーションの確率形式を一から数学的に定式化した~[\ref{ref: manifestly covariant}, \ref{ref: stochastic anomaly}].
-以上が申請者のこれまでの研究活動と実績の簡単なまとめであり, 本研究課題の遂行可能性を示す客観的証拠であると言える.
+一方, 乱数を扱う数学である\emph{確率形式}をインフレーションに応用し, 曲率ゆらぎを非摂動的に計算する手法を提唱~[\ref{ref: stochastic hybrid}, \ref{ref: stochastic-dN}], 
+PBH を実現するような大きなゆらぎも扱える可能性を提示した.
+論文~[\ref{ref: PBH hybrid}] では実際に特定のインフレーション理論に確率形式を適用し PBH 形成を議論した.
+フランスでは本確率形式をインフレーション理論の一般形に適用できるよう, インフレーションの確率形式を一から数学的に定式化し直した~[\ref{ref: manifestly covariant}, \ref{ref: stochastic anomaly}].
+以上のように申請者はこれまで\ul{当該領域で十分な実績を挙げており, 本研究課題の遂行可能性を客観的に示している}.
 
 
 \begin{mdframed}[roundcorner=0.5zw,
